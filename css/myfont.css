@@ -1,0 +1,155 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3867246, 2020-12-16T11:57:38-0500
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Sadi Sans Heavy Italic by Koray Özbey
+ * URL: https://www.myfonts.com/collections/koray-ozbey-foundry
+
+ * Webfont: Sadi Sans Heavy by Koray Özbey
+ * URL: https://www.myfonts.com/collections/koray-ozbey-foundry
+
+ * Webfont: Sadi Sans Extra Bold Italic by Koray Özbey
+ * URL: https://www.myfonts.com/collections/koray-ozbey-foundry
+
+ * Webfont: Sadi Sans Extra Bold by Koray Özbey
+ * URL: https://www.myfonts.com/collections/koray-ozbey-foundry
+
+ * Webfont: Sadi Sans Bold Italic by Koray Özbey
+ * URL: https://www.myfonts.com/collections/koray-ozbey-foundry
+
+ * Webfont: Sadi Sans Bold by Koray Özbey
+ * URL: https://www.myfonts.com/collections/koray-ozbey-foundry
+
+ * Webfont: Sadi Sans Semi Bold Italic by Koray Özbey
+ * URL: https://www.myfonts.com/collections/koray-ozbey-foundry
+
+ * Webfont: Sadi Sans Semi Bold by Koray Özbey
+ * URL: https://www.myfonts.com/collections/koray-ozbey-foundry
+
+ * Webfont: Sadi Sans Medium Italic by Koray Özbey
+ * URL: https://www.myfonts.com/collections/koray-ozbey-foundry
+
+ * Webfont: Sadi Sans Medium by Koray Özbey
+ * URL: https://www.myfonts.com/collections/koray-ozbey-foundry
+
+ * Webfont: Sadi Sans Variable by Koray Özbey
+ * URL: https://www.myfonts.com/collections/koray-ozbey-foundry
+
+ * Webfont: Sadi Sans Variable Italic by Koray Özbey
+ * URL: https://www.myfonts.com/collections/koray-ozbey-foundry
+
+ * Webfont: Sadi Sans Thin by Koray Özbey
+ * URL: https://www.myfonts.com/collections/koray-ozbey-foundry
+
+ * Webfont: Sadi Sans Thin Italic by Koray Özbey
+ * URL: https://www.myfonts.com/collections/koray-ozbey-foundry
+
+ * Webfont: Sadi Sans Extra Light by Koray Özbey
+ * URL: https://www.myfonts.com/collections/koray-ozbey-foundry
+
+ * Webfont: Sadi Sans Extra Light Italic by Koray Özbey
+ * URL: https://www.myfonts.com/collections/koray-ozbey-foundry
+
+ * Webfont: Sadi Sans Regular Italic by Koray Özbey
+ * URL: https://www.myfonts.com/collections/koray-ozbey-foundry
+
+ * Webfont: Sadi Sans Regular by Koray Özbey
+ * URL: https://www.myfonts.com/collections/koray-ozbey-foundry
+
+ * Webfont: Sadi Sans Light Italic by Koray Özbey
+ * URL: https://www.myfonts.com/collections/koray-ozbey-foundry
+
+ * Webfont: Sadi Sans Light by Koray Özbey
+ * URL: https://www.myfonts.com/collections/koray-ozbey-foundry
+ 
+ * © 2025 MyFonts Inc. */
+
+
+  
+@font-face {
+  font-family: "SadiSansThin";
+  src: url('../myfonts/SadiSansThin/font.woff2') format('woff2'), url('../myfonts/SadiSansThin/font.woff') format('woff');
+}
+@font-face {
+  font-family: "SadiSansHeavy";
+  src: url('../myfonts/SadiSansHeavy/font.woff2') format('woff2'), url('../myfonts/SadiSansHeavy/font.woff') format('woff');
+}
+@font-face {
+  font-family: "SadiSansExtraLight";
+  src: url('../myfonts/SadiSansExtraLight/font.woff2') format('woff2'), url('../myfonts/SadiSansExtraLight/font.woff') format('woff');
+}
+@font-face {
+  font-family: "SadiSansThinItalic";
+  src: url('../myfonts/SadiSansThinItalic/font.woff2') format('woff2'), url('../myfonts/SadiSansThinItalic/font.woff') format('woff');
+}
+@font-face {
+  font-family: "SadiSansSemiBoldItalic";
+  src: url('../myfonts/SadiSansSemiBoldItalic/font.woff2') format('woff2'), url('../myfonts/SadiSansSemiBoldItalic/font.woff') format('woff');
+}
+@font-face {
+  font-family: "SadiSansMediumItalic";
+  src: url('../myfonts/SadiSansMediumItalic/font.woff2') format('woff2'), url('../myfonts/SadiSansMediumItalic/font.woff') format('woff');
+}
+@font-face {
+  font-family: "SadiSansExtraBoldItalic";
+  src: url('../myfonts/SadiSansExtraBoldItalic/font.woff2') format('woff2'), url('../myfonts/SadiSansExtraBoldItalic/font.woff') format('woff');
+}
+@font-face {
+  font-family: "SadiSansRegularItalic";
+  src: url('../myfonts/SadiSansRegularItalic/font.woff2') format('woff2'), url('../myfonts/SadiSansRegularItalic/font.woff') format('woff');
+}
+@font-face {
+  font-family: "SadiSansLightItalic";
+  src: url('../myfonts/SadiSansLightItalic/font.woff2') format('woff2'), url('../myfonts/SadiSansLightItalic/font.woff') format('woff');
+}
+@font-face {
+  font-family: "SadiSansLight";
+  src: url('../myfonts/SadiSansLight/font.woff2') format('woff2'), url('../myfonts/SadiSansLight/font.woff') format('woff');
+}
+@font-face {
+  font-family: "SadiSansExtraBold";
+  src: url('../myfonts/SadiSansExtraBold/font.woff2') format('woff2'), url('../myfonts/SadiSansExtraBold/font.woff') format('woff');
+}
+@font-face {
+  font-family: "SadiSansVariable";
+  src: url('../myfonts/SadiSansVariable/font.woff2') format('woff2'), url('../myfonts/SadiSansVariable/font.woff') format('woff');
+}
+@font-face {
+  font-family: "SadiSansBold";
+  src: url('../myfonts/SadiSansBold/font.woff2') format('woff2'), url('../myfonts/SadiSansBold/font.woff') format('woff');
+}
+@font-face {
+  font-family: "SadiSansExtraLightItalic";
+  src: url('../myfonts/SadiSansExtraLightItalic/font.woff2') format('woff2'), url('../myfonts/SadiSansExtraLightItalic/font.woff') format('woff');
+}
+@font-face {
+  font-family: "SadiSansSemiBold";
+  src: url('../myfonts/SadiSansSemiBold/font.woff2') format('woff2'), url('../myfonts/SadiSansSemiBold/font.woff') format('woff');
+}
+@font-face {
+  font-family: "SadiSansRegular";
+  src: url('../myfonts/SadiSansRegular/font.woff2') format('woff2'), url('../myfonts/SadiSansRegular/font.woff') format('woff');
+}
+@font-face {
+  font-family: "SadiSansVariableItalic";
+  src: url('../myfonts/SadiSansVariableItalic/font.woff2') format('woff2'), url('../myfonts/SadiSansVariableItalic/font.woff') format('woff');
+}
+@font-face {
+  font-family: "SadiSansHeavyItalic";
+  src: url('../myfonts/SadiSansHeavyItalic/font.woff2') format('woff2'), url('../myfonts/SadiSansHeavyItalic/font.woff') format('woff');
+}
+@font-face {
+  font-family: "SadiSansMedium";
+  src: url('../myfonts/SadiSansMedium/font.woff2') format('woff2'), url('../myfonts/SadiSansMedium/font.woff') format('woff');
+}
+@font-face {
+  font-family: "SadiSansBoldItalic";
+  src: url('../myfonts/SadiSansBoldItalic/font.woff2') format('woff2'), url('../myfonts/SadiSansBoldItalic/font.woff') format('woff');
+}
+

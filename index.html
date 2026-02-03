@@ -1,0 +1,772 @@
+﻿<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <title>Red Lion Advisory — F.A.S.T. | Finance • Analytics • Strategy • Transformation</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="Red Lion Advisory">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="description"
+        content="Red Lion Advisory (F.A.S.T.) helps private companies, founders, and family offices navigate growth, capital events, and strategic inflection points with financial precision and executional depth.">
+    <meta name="robots" content="index, follow">
+    <!-- Canonical will be set to the current page URL by JS so it works in any environment -->
+    <link rel="canonical" href="">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:site_name" content="Red Lion Advisory">
+    <meta property="og:title" content="Red Lion Advisory — F.A.S.T. | Finance, Analytics, Strategy & Transformation">
+    <meta property="og:description"
+        content="We help private companies, founders, and family offices navigate growth, capital events, and strategic inflection points—with clarity, speed, and executional depth.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="images/redLine/RLA-Logo.png">
+    <meta property="og:locale" content="en_US">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Red Lion Advisory — F.A.S.T.">
+    <meta name="twitter:description"
+        content="Finance, Analytics, Strategy & Transformation for private companies and founders.">
+    <meta name="twitter:image" content="images/redLine/RLA-Logo.png">
+    <!-- JSON-LD structured data (Organization + Website) -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@graph": [
+                {
+                    "@type": "Organization",
+                    "name": "Red Lion Advisory",
+                    "url": "",
+                    "logo": "images/redLine/RLA-Logo.png",
+                    "sameAs": [
+                        "https://www.linkedin.com/company/redlionadvisory/",
+                        "https://x.com/AdvisoryLi92397"
+                    ]
+                },
+                {
+                    "@type": "WebSite",
+                    "name": "Red Lion Advisory",
+                    "url": ""
+                }
+            ]
+        }
+        </script>
+    <!-- favicon icon -->
+    <link rel="shortcut icon" href="images/redLine/rla-logo-touch-icon.png">
+    <link rel="apple-touch-icon" href="images/redLine/rla-logo-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/redLine/rla-logo-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/redLine/rla-logo-touch-icon.png">
+    <!-- google fonts preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- style sheets and font icons -->
+    <link rel="stylesheet" href="css/vendors.min.css" />
+    <link rel="stylesheet" href="css/icon.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/myfont.css" />
+    <link rel="stylesheet" href="css/finance.css" />
+    <script>
+        // Set canonical and Open Graph URL dynamically so this file can be served from any host
+        (function () {
+            try {
+                var canonical = document.querySelector('link[rel="canonical"]');
+                var ogUrl = document.querySelector('meta[property="og:url"]');
+                var orgJson = document.querySelector('script[type="application/ld+json"]');
+                var loc = window.location.href.split('?')[0].split('#')[0];
+                if (canonical) canonical.href = loc;
+                if (ogUrl) ogUrl.content = loc;
+                if (orgJson) {
+                    try {
+                        var data = JSON.parse(orgJson.textContent);
+                        if (Array.isArray(data['@graph'])) {
+                            data['@graph'].forEach(function (node) { if (node.url === "") node.url = loc; });
+                            orgJson.textContent = JSON.stringify(data);
+                        }
+                    } catch (e) { /* ignore JSON errors */ }
+                }
+            } catch (e) { }
+        })();
+    </script>
+</head>
+
+<body data-mobile-nav-style="full-screen-menu" data-mobile-nav-bg-color="#b91c1c" class="custom-cursor">
+    <!-- Primary page heading (visually hidden for layout): improves SEO and accessibility -->
+    <h1 style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;">Red Lion Advisory —
+        Finance, Analytics, Strategy & Transformation</h1>
+    <!-- start cursor -->
+    <div class="cursor-page-inner">
+        <div class="circle-cursor circle-cursor-inner"></div>
+        <div class="circle-cursor circle-cursor-outer"></div>
+    </div>
+    <!-- end cursor -->
+    <!-- start header -->
+    <header>
+        <!-- start navigation -->
+        <nav class="navbar navbar-expand-lg bg-transparent disable-fixed">
+            <div class="container-fluid">
+                <div class="col-auto col-lg-2 me-lg-0 me-auto">
+                    <a class="navbar-brand" href="/">
+                        <img src="images/redLine/LionRedLionLogoW.png" data-at2x="images/redLine/LionRedLionLogoW.png"
+                            alt="Red Lion Advisory logo" class="default-logo">
+                        <img src="images/redLine/LionRedLionLogoW.png" data-at2x="images/redLine/LionRedLionLogoW.png"
+                            alt="Red Lion Advisory logo" class="alt-logo">
+                        <img src="images/redLine/RLA-Logo.png" data-at2x="images/redLine/RLA-Logo.png"
+                            alt="Red Lion Advisory mark" class="mobile-logo">
+                    </a>
+                </div>
+                <div class="col-auto col-lg-8 menu-order position-static">
+                    <button class="navbar-toggler float-start" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav" aria-expanded="false" aria-controls="navbarNav"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-line"></span>
+                        <span class="navbar-toggler-line"></span>
+                        <span class="navbar-toggler-line"></span>
+                        <span class="navbar-toggler-line"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                        <ul class="navbar-nav alt-font">
+                            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                            <li class="nav-item"><a href="about.html" class="nav-link">About us</a></li>
+                            <li class="nav-item"><a href="why-us.html" class="nav-link">Why us</a></li>
+                            <li class="nav-item dropdown simple-dropdown">
+                                <a href="services.html" class="nav-link">Services</a>
+                            </li>
+                            <li class="nav-item dropdown simple-dropdown">
+                                <a href="case-studies.html" class="nav-link">Case Studies</a>
+                            </li>
+                            <li class="nav-item d-flex d-sm-none"><a href="contact.html" class="nav-link">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-auto col-lg-2 text-end d-none d-sm-flex">
+                    <div class="header-icon">
+                        <div class="header-button"><a href="contact.html"
+                                class="btn btn-very-small btn-white btn-box-shadow btn-round-edge left-icon text-transform-none"><i
+                                    class="feather icon-feather-mail"></i>Contact</a></div>
+                    </div>
+                    <!-- start contact form -->
+                    <div id="contact-form"
+                        class="container p-0 contact-form-style-01 position-relative text-center mfp-hide">
+                        <div class="row g-0">
+                            <div class="col-lg-5 cover-background md-h-600px xs-h-400px"
+                                style="background-image:url('images/redLine/contact-us.jpg');"></div>
+                            <div class="col-lg-7">
+                                <div class="p-15 lg-p-10 bg-white">
+                                    <span class="mb-10px">Looking for a finance agent?</span>
+                                    <h3 class="d-inline-block alt-font fw-600 text-dark-gray mb-10 ls-minus-1px">How we
+                                        can help you?</h3>
+                                    <form action="email-templates/contact-form.php" method="post">
+                                        <div class="position-relative form-group mb-20px">
+                                            <span class="form-icon"><i class="bi bi-emoji-smile"></i></span>
+                                            <input type="text" name="name" class="form-control required"
+                                                placeholder="Enter your name*" />
+                                        </div>
+                                        <div class="position-relative form-group mb-20px">
+                                            <span class="form-icon"><i class="bi bi-envelope"></i></span>
+                                            <input type="email" name="email" class="form-control required"
+                                                placeholder="Enter your email*" />
+                                        </div>
+                                        <div class="position-relative form-group mb-20px">
+                                            <span class="form-icon"><i class="bi bi-telephone-outbound"></i></span>
+                                            <input type="tel" name="phone" class="form-control"
+                                                placeholder="Enter your phone" />
+                                        </div>
+                                        <div class="position-relative form-group form-textarea">
+                                            <span class="form-icon"><i class="bi bi-chat-square-dots"></i></span>
+                                            <textarea placeholder="Your message" name="comment" class="form-control"
+                                                rows="3"></textarea>
+                                            <input type="hidden" name="redirect" value="">
+                                            <button
+                                                class="btn btn-medium btn-base-color btn-box-shadow btn-round-edge w-100 mt-20px submit"
+                                                type="submit">Send message</button>
+                                            <div class="form-results mt-20px d-none"></div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end contact form -->
+                </div>
+            </div>
+        </nav>
+        <!-- end navigation -->
+    </header>
+
+    <section class="p-0 bg-dark-gray hv-100 md:h-auto">
+        <div class="swiper full-screen full-100h ipad-top-space-margin swiper-light-pagination swiper-pagination-style-3"
+            data-slider-options='{ 
+              "slidesPerView": 1, 
+              "loop": true, 
+              "pagination": { "el": ".swiper-pagination-bullets", "clickable": true }, 
+              "navigation": { "nextEl": ".slider-one-slide-next-1", "prevEl": ".slider-one-slide-prev-1" }, 
+              "autoplay": { "delay": 8000, "disableOnInteraction": false }, 
+              "keyboard": { "enabled": true, "onlyInViewport": true }, 
+              "effect": "fade" 
+            }'>
+
+            <div class="swiper-wrapper">
+                <!-- start slider item -->
+                <div class="swiper-slide">
+                    <div class="position-absolute left-0px top-0px w-100 h-100 cover-background"
+                        data-anime='{ "translateY": [0, 0], "opacity": [1,1], "scale": [1,1], "duration": 10000, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                        <video autoplay muted loop playsinline aria-hidden="true" class="hero-background-video vh-100"
+                            style="width:100vw; height:100vh; object-fit:cover; display:block; background:#000;">
+                            <source src="video/video-0.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+
+                    <div class="video-section-overlay"></div>
+                    <div class="container h-100">
+                        <div class="row align-items-center h-100 justify-content-center">
+                            <div class="col-sm-12 position-relative text-white text-center">
+                                <div class="alt-font fs-70 lh-100 lg-fs-80 xs-fs-50 fw-500 mb-40px ls-minus-3px sm-ls-minus-2px text-shadow-double-large"
+                                    data-fancy-text='{ "opacity": [0, 1], "translateY": [50, 0], "string": ["Executing Strategic Decisions into Scalable Success"], "duration": 500, "delay": 200, "speed": 10, "easing": "easeOutQuad" }'>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end slider item -->
+
+
+                <!-- start slider item -->
+                <div class="swiper-slide">
+                    <div class="position-absolute left-0px top-0px w-100 h-100 cover-background"
+                        data-anime='{ "translateY": [0, 0], "opacity": [1,1], "scale": [1,1], "duration": 10000, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                        <video autoplay muted loop playsinline aria-hidden="true" class="hero-background-video vh-100"
+                            style="width:100vw; height:100vh; object-fit:cover; display:block; background:#000;">
+                            <source src="video/video-1.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+
+                    <div class="video-section-overlay"></div>
+                    <div class="container h-100">
+                        <div class="row align-items-center h-100 justify-content-center">
+                            <div class="col-sm-12 position-relative text-white text-center">
+                                <div class="alt-font fs-70 lh-100 lg-fs-80 xs-fs-50 fw-500 mb-40px ls-minus-3px sm-ls-minus-2px text-shadow-double-large"
+                                    data-fancy-text='{ "opacity": [0, 1], "translateY": [50, 0], "string": ["Turning Adversity Into Opportunity"], "duration": 500, "delay": 200, "speed": 10, "easing": "easeOutQuad" }'>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end slider item -->
+
+
+                <!-- start slider item -->
+                <div class="swiper-slide">
+                    <div class="position-absolute left-0px top-0px w-100 h-100 cover-background"
+                        data-anime='{ "translateY": [0, 0], "opacity": [1,1], "scale": [1,1], "duration": 10000, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                        <video autoplay muted loop playsinline aria-hidden="true" class="hero-background-video vh-100"
+                            style="width:100vw; height:100vh; object-fit:cover; display:block; background:#000;">
+                            <source src="video/video-2.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+
+                    <div class="video-section-overlay"></div>
+                    <div class="container h-100">
+                        <div class="row align-items-center h-100 justify-content-center">
+                            <div class="col-sm-12 position-relative text-white text-center">
+                                <div class="alt-font fs-70 lh-100 lg-fs-80 xs-fs-50 fw-500 mb-40px ls-minus-3px sm-ls-minus-2px text-shadow-double-large"
+                                    data-fancy-text='{ "opacity": [0, 1], "translateY": [50, 0], "string": ["Navigating Change, Delivering Results"], "duration": 500, "delay": 200, "speed": 10, "easing": "easeOutQuad" }'>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end slider item -->
+
+
+                <!-- start slider item -->
+                <div class="swiper-slide">
+                    <div class="position-absolute left-0px top-0px w-100 h-100 cover-background"
+                        data-anime='{ "translateY": [0, 0], "opacity": [1,1], "scale": [1,1], "duration": 10000, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                        <video autoplay muted loop playsinline aria-hidden="true" class="hero-background-video vh-100"
+                            style="width:100vw; height:100vh; object-fit:cover; display:block; background:#000;">
+                            <source src="video/video-3.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+
+                    <div class="video-section-overlay"></div>
+                    <div class="container h-100">
+                        <div class="row align-items-center h-100 justify-content-center">
+                            <div class="col-sm-12 position-relative text-white text-center">
+                                <div class="alt-font fs-70 lh-100 lg-fs-80 xs-fs-50 fw-500 mb-40px ls-minus-3px sm-ls-minus-2px text-shadow-double-large"
+                                    data-fancy-text='{ "opacity": [0, 1], "translateY": [50, 0], "string": ["Commitment to Execution Amid Uncertainty"], "duration": 500, "delay": 200, "speed": 10, "easing": "easeOutQuad" }'>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end slider item -->
+
+                <!-- start slider item -->
+                <div class="swiper-slide">
+                    <div class="position-absolute left-0px top-0px w-100 h-100 cover-background"
+                        data-anime='{ "translateY": [0, 0], "opacity": [1,1], "scale": [1,1], "duration": 10000, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                        <video autoplay muted loop playsinline aria-hidden="true" class="hero-background-video vh-100"
+                            style="width:100vw; height:100vh; object-fit:cover; display:block; background:#000;">
+                            <source src="video/video-4.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+
+                    <div class="video-section-overlay"></div>
+                    <div class="container h-100">
+                        <div class="row align-items-center h-100 justify-content-center">
+                            <div class="col-sm-12 position-relative text-white text-center">
+                                <div class="alt-font fs-70 lh-100 lg-fs-80 xs-fs-50 fw-500 mb-40px ls-minus-3px sm-ls-minus-2px text-shadow-double-large"
+                                    data-fancy-text='{ "opacity": [0, 1], "translateY": [50, 0], "string": ["Building Scalable Success Through Financial Leadership"], "duration": 500, "delay": 200, "speed": 10, "easing": "easeOutQuad" }'>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end slider item -->
+
+
+                <!-- start slider item -->
+                <div class="swiper-slide">
+                    <div class="position-absolute left-0px top-0px w-100 h-100 cover-background"
+                        data-anime='{ "translateY": [0, 0], "opacity": [1,1], "scale": [1,1], "duration": 10000, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                        <video autoplay muted loop playsinline aria-hidden="true" class="hero-background-video vh-100"
+                            style="width:100vw; height:100vh; object-fit:cover; display:block; background:#000;">
+                            <source src="video/video-5.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+
+                    <div class="video-section-overlay"></div>
+                    <div class="container h-100">
+                        <div class="row align-items-center h-100 justify-content-center">
+                            <div class="col-sm-12 position-relative text-white text-center">
+                                <div class="alt-font fs-70 lh-100 lg-fs-80 xs-fs-50 fw-500 mb-40px ls-minus-3px sm-ls-minus-2px text-shadow-double-large"
+                                    data-fancy-text='{ "opacity": [0, 1], "translateY": [50, 0], "string": ["Strategic Vision, Disciplined Execution, Scalable Growth"], "duration": 500, "delay": 200, "speed": 10, "easing": "easeOutQuad" }'>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end slider item -->
+
+            </div>
+        </div>
+
+        <!-- start slider pagination -->
+        <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets d-none"></div>
+        <!-- end slider pagination -->
+
+        <!-- start slider navigation -->
+        <div
+            class="slider-one-slide-prev-1 icon-very-small text-white swiper-button-prev slider-navigation-style-06 d-none d-sm-inline-block">
+            <i class="line-icon-Arrow-OutLeft icon-extra-large"></i>
+        </div>
+        <div
+            class="slider-one-slide-next-1 icon-very-small text-white swiper-button-next slider-navigation-style-06 d-none d-sm-inline-block">
+            <i class="line-icon-Arrow-OutRight icon-extra-large"></i>
+        </div>
+        <!-- end slider navigation -->
+    </section>
+
+
+
+
+    <!-- end banner slider -->
+    <!-- start section -->
+    <!-- style="background-image:url('images/redLine/RLX-box.png');" -->
+    <section class="big-section overflow-visible cover-background sm-background-image-none">
+        <div class="container">
+            <!-- start row -->
+            <div class="row align-items-center">
+                <div class="col-xl-12"
+                    data-anime='{ "el": "childs", "translateX": [50, 0], "opacity": [0,1], "duration": 800, "delay": 0, "staggervalue": 200, "easing": "easeOutQuad" }'>
+                    <div class="d-flex align-items-center justify-content-center flex-column mb-2">
+                        <h2 class="alt-font fw-600 ls-minus-2px text-dark-gray text-center ft-md-32 ft-md-32">About Red
+                            Lion Advisory</h2>
+                        <p class="text-center w-100 w-md-75">We help private companies, founders, and family offices
+                            navigate
+                            growth, capital events, and strategic inflection points—with clarity, speed, and executional
+                            depth.</p>
+                    </div>
+
+                    <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 justify-content-center"
+                        data-anime='{ "el": "childs", "willchange": "transform", "perspective": [1200,1200], "translateY": [0, 0], "scale": [1.1, 1], "rotateX": [30, 0], "opacity": [0,1], "duration": 1000, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                        <!-- start features box item -->
+                        <div class="col icon-with-text-style-04 transition-inner-all md-mb-30px">
+                            <div
+                                class="feature-box bg-white h-100 justify-content-start p-10 xs-p-10 lg-p-15 box-shadow-quadruple-large box-shadow-quadruple-large-hover border-radius-5px">
+                                <div
+                                    class="feature-box-icon feature-box-icon-rounded mx-auto rounded-circle h-90px w-90px fs-24 text-dark-gray border border-2 border-color-extra-medium-gray mb-25px fw-500">
+                                    <img src="images/redLine/svg/costumer.svg" alt="Integrated Expertise"
+                                        style="width:40px; height:40px;">
+                                </div>
+                                <div class="feature-box-content">
+                                    <span class="d-inline-block alt-font text-dark-gray fw-500 mb-5px fs-22">Integrated
+                                        Expertise</span>
+                                    <p class="mb-15px">Experience across capital markets, operations, and
+                                        leadership—solving challenges that demand both financial precision and strategic
+                                        execution.</p>
+                                </div>
+                                <div class="feature-box-overlay bg-white border-radius-6px"></div>
+                            </div>
+                        </div>
+                        <!-- end features box item -->
+                        <!-- start features box item -->
+                        <div class="col icon-with-text-style-04 transition-inner-all md-mb-30px">
+                            <div
+                                class="feature-box bg-white h-100 justify-content-start p-10 xs-p-10 lg-p-15 box-shadow-quadruple-large box-shadow-quadruple-large-hover border-radius-5px">
+                                <div
+                                    class="feature-box-icon feature-box-icon-rounded mx-auto rounded-circle h-90px w-90px fs-24 text-dark-gray border border-2 border-color-extra-medium-gray mb-25px fw-500">
+                                    <img src="images/redLine/svg/growth.svg" alt="Integrated Expertise"
+                                        style="width:40px; height:40px;">
+                                </div>
+                                <div class="feature-box-content">
+                                    <span class="d-inline-block alt-font text-dark-gray fw-500 mb-5px fs-22">Execution
+                                        Focused</span>
+                                    <p class="mb-15px">Lead with urgency, discipline, and accountability—driving
+                                        outcomes from strategy through implementation without losing momentum.</p>
+                                </div>
+                                <div class="feature-box-overlay bg-white border-radius-6px"></div>
+                            </div>
+                        </div>
+                        <!-- end features box item -->
+                        <!-- start features box item -->
+                        <div class="col icon-with-text-style-04 transition-inner-all">
+                            <div
+                                class="feature-box bg-white h-100 justify-content-start p-10 xs-p-10 lg-p-15 box-shadow-quadruple-large box-shadow-quadruple-large-hover border-radius-5px">
+                                <div
+                                    class="feature-box-icon feature-box-icon-rounded mx-auto rounded-circle h-90px w-90px fs-24 text-dark-gray border border-2 border-color-extra-medium-gray mb-25px fw-500">
+                                    <img src="images/redLine/svg/deal.svg" alt="Integrated Expertise"
+                                        style="width:40px; height:40px;">
+                                </div>
+                                <div class="feature-box-content">
+                                    <span class="d-inline-block alt-font text-dark-gray fw-500 mb-5px fs-22">Principled
+                                        Partnership</span>
+                                    <p class="mb-15px">Build trust through action, not optics—operating with discretion,
+                                        alignment, and a long-term mindset in every engagement.</p>
+                                </div>
+                                <div class="feature-box-overlay bg-white border-radius-6px"></div>
+                            </div>
+                        </div>
+                        <!-- end features box item -->
+                    </div>
+                </div>
+            </div>
+            <!-- end row -->
+        </div>
+    </section>
+    <!-- end section -->
+    <!-- start section -->
+    <section class="bg-very-light-gray overflow-hidden position-relative">
+        <div class="container z-index-1 position-relative">
+            <div class="row justify-content-center mb-2">
+                <div class="col-lg-12 text-center text-white"
+                    data-anime='{ "el": "childs", "translateY": [50, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 200, "easing": "easeOutQuad" }'>
+                    <h2 class="alt-font text-white fw-600 ls-minus-1px ft-md-32 ft-md-32">Case Studies, Prior/Current
+                        Experience &
+                        Engagements
+                    </h2>
+                    <p class="w-100 w-md-75 mx-auto">Explore representative examples of how Red Lion Advisory has
+                        delivered
+                        tangible results for our clients.</p>
+                </div>
+            </div>
+            <div class="col-12 gap-3 gap-md-0 row position-relative mx-auto md:mx-init-0">
+                <div class="col-md-4">
+                    <div class="services-box border border-color-white p-5 xxl-p-6 box-shadow-extra-large h-100">
+                        <div class="services-box-icon">
+                            <i class="line-icon-Factory icon-extra-large text-white mb-25px"></i>
+                        </div>
+                        <div class="services-box-content">
+                            <a href="javascript:void(0)"
+                                class="d-block alt-font text-white fs-22 md-fs-20 fw-500 mb-10px">Waste Company</a>
+                            <span class="font-semibold mb-15px lh-20 text-red-700 alt-font text-white">$200,000,000
+                                Acquisition Financing</span>
+                            <p class="mt-15px text-white">Role: Co-Syndication Agent</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="services-box border border-color-white p-5 xxl-p-6 box-shadow-extra-large h-100">
+                        <div class="services-box-icon">
+                            <i class="line-icon-Library-2 icon-extra-large text-white mb-25px"></i>
+                        </div>
+                        <div class="services-box-content">
+                            <a href="javascript:void(0)"
+                                class="d-inline-block alt-font  text-white fs-22 md-fs-20 fw-500 mb-10px">Proprietary
+                                Education Management & Technology Company</a>
+                            <span class="font-semibold mb-15px lh-20 text-red-700 alt-font  text-white">$750,000,000
+                                Private Student Loan & Receivables Sale
+                            </span>
+                            <p class="mt-15px text-white">Role: Treasurer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="services-box border border-color-white p-5 xxl-p-6 box-shadow-extra-large h-100">
+                        <div class="services-box-icon">
+                            <i class="line-icon-Juice icon-extra-large text-white mb-25px"></i>
+                        </div>
+                        <div class="services-box-content">
+                            <a href="javascript:void(0)"
+                                class="d-block alt-font fs-22 md-fs-20 fw-500 mb-10px text-white">International Juice
+                                Company</a>
+                            <span class="font-semibold mb-15px lh-20 text-red-700 alt-font text-white">$35,000,000
+                                Leverage Recapitalization</span>
+                            <p class="mt-15px text-white">Role: Senior Secured Lender</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 gap-3 gap-md-0 row position-relative mx-auto md:mx-init-0 mt-4">
+
+                <div class="col-md-4">
+                    <div class="services-box border border-color-white p-5 xxl-p-6 box-shadow-extra-large h-100">
+                        <div class="services-box-icon">
+                            <i class="line-icon-City-Hall icon-extra-large text-white mb-25px"></i>
+                        </div>
+                        <div class="services-box-content">
+                            <a href="javascript:void(0)"
+                                class="d-block alt-font text-white fs-22 md-fs-20 fw-500 mb-10px">International Bank</a>
+                            <span class="font-semibold mb-15px lh-20 text-red-700 alt-font text-white">$50,000,000
+                                Correspondent Banking Facility</span>
+                            <p class="mt-15px text-white">Role: Senior Secured Lender</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="services-box border border-color-white p-5 xxl-p-6 box-shadow-extra-large h-100">
+                        <div class="services-box-icon">
+                            <i class="line-icon-Consulting icon-extra-large text-white mb-25px "></i>
+                        </div>
+                        <div class="services-box-content">
+                            <a href="javascript:void(0)"
+                                class="d-inline-block alt-font text-white fs-22 md-fs-20 fw-500 mb-10px">National Home
+                                Services Company
+                            </a>
+                            <span class="font-semibold mb-15px lh-20 text-red-700 alt-font text-white">Capital Raise &
+                                Finance Advisory</span>
+                            <p class="mt-15px text-white">Role: Strategic Partner</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="services-box border border-color-white p-5 xxl-p-6 box-shadow-extra-large h-100">
+                        <div class="services-box-icon">
+                            <i class="line-icon-Basket-Coins icon-extra-large text-white mb-25px"></i>
+                        </div>
+                        <div class="services-box-content">
+                            <a href="javascript:void(0)"
+                                class="d-block alt-font text-white fs-22 md-fs-20 fw-500 mb-10px">Specialty Goods
+                                Retail</a>
+                            <span class="font-semibold mb-15px lh-20 text-red-700 alt-font text-white">Embedded C-Suite
+                                Leadership</span>
+                            <p class="mt-15px text-white">Role: Executive Partner
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- <video autoplay muted loop playsinline webkit-playsinline class="hero-background-video vh-100 position-absolute top-0 start-0"
+                style="width:100vw; height:100vh; object-fit:cover; display:block; background:#000;">
+                <source src="video/RLAVid3.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video> -->
+        <img src="images/redLine/finance-casestudy.jpg" alt="Red Lion Advisory"
+            class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover" style="z-index:0;">
+        <div class="bg-after-effect"></div>
+    </section>
+    <!-- end section -->
+    <!-- start section -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 tab-style-04"
+                    data-anime='{ "translateY": [0, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'>
+
+                    <div class="d-flex align-items-center justify-content-center flex-column mb-2">
+                        <h2 class="alt-font fw-600 ls-minus-2px text-dark-gray text-center ft-md-32 ft-md-32">Our
+                            Diverse Offerings</h2>
+                        <p class="text-center w-100 w-md-75">We provide cross-functional guidance across capital
+                            allocation,
+                            diligence, operations, and growth—tailored to each client's unique objectives and
+                            challenges.</p>
+                    </div>
+
+                    <div class="col-sm-12">
+                        <div class="row align-items-stretch justify-content-center py-0 py-md-5">
+                            <div class="col-lg-7 col-md-6 sm-mb-15px order-1 order-md-1 d-flex">
+                                <img src="images/redLine/offer-01.jpg"
+                                    alt="Strategic Finance services - Red Lion Advisory"
+                                    class="w-100 h-100 object-fit-cover rounded" />
+                            </div>
+                            <div class="col-lg-5 col-md-6 text-left text-md-start order-2 order-md-2 d-flex">
+                                <div class="d-flex flex-column justify-content-center">
+                                    <h4 class="font-semibold mb-3 text-red-700 alt-font text-base-color">
+                                        Strategic Finance/CFO Services
+                                    </h4>
+                                    <p class="text-dark-gray mb-15px fs-18">
+                                        We provide expert financial leadership to help businesses
+                                        manage complexity and make strategic decisions that drive
+                                        growth. From cash flow management to optimal capital stack
+                                        structuring, we ensure financial frameworks are seamlessly
+                                        integrated to drive stability, innovation, and long-term
+                                        value creation. Our hands-on, partnership-driven approach
+                                        enables businesses to scale with confidence.
+                                    </p>
+                                    <ul class="fs-18 lh-30 text-dark-gray mb-15px list-style-04">
+                                        <li>Deal screening &amp; Diligence</li>
+                                        <li>M&amp;A strategy &amp; Execution</li>
+                                        <li>Growth &amp; Transformation Strategy</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row align-items-stretch justify-content-center py-3 py-md-5">
+                            <!-- Image Column -->
+                            <div class="col-lg-7 col-md-6 sm-mb-15px order-1 order-md-2 d-flex">
+                                <img src="images/redLine/offer-02.jpg"
+                                    alt="Capital raise and capital markets advisory - Red Lion Advisory"
+                                    class="w-100 h-100 object-fit-cover rounded" />
+                            </div>
+
+                            <!-- Text Column -->
+                            <div class="col-lg-5 col-md-6 text-left text-md-start order-2 order-md-1 d-flex">
+                                <div class="d-flex flex-column justify-content-center">
+                                    <h4 class="font-semibold mb-3 text-red-700 alt-font text-base-color">
+                                        Capital Raise and Capital Markets Advisory
+                                    </h4>
+                                    <p class="text-dark-gray mb-15px fs-18">
+                                        We specialize in securing strategic capital aligned with business objectives.
+                                        Our expertise spans debt and equity financing, ensuring businesses navigate
+                                        capital markets with confidence and secure the optimal capital stack for their
+                                        growth. By delivering customized, strategic financial solutions, we enhance
+                                        resilience and position businesses for a sustainable competitive advantage.
+                                    </p>
+                                    <ul class="fs-18 lh-30 text-dark-gray mb-15px list-style-04">
+                                        <li>Financial Modeling &amp; Valuation</li>
+                                        <li>Capital Structure &amp; Transactions</li>
+                                        <li>Fundraising &amp; Investor Prep</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="row align-items-stretch justify-content-center pt-0 pt-md-5">
+                            <!-- Image Column -->
+                            <div class="col-lg-7 col-md-6 sm-mb-15px d-flex">
+                                <img src="images/redLine/offer-03.jpg"
+                                    alt="Organizational and operational transformation - Red Lion Advisory"
+                                    class="w-100 h-100 object-fit-cover rounded" />
+                            </div>
+
+                            <!-- Text Column -->
+                            <div class="col-lg-5 col-md-6 text-left text-md-start d-flex">
+                                <div class="d-flex flex-column justify-content-center">
+                                    <h4 class="font-semibold mb-3 text-red-700 alt-font text-base-color">
+                                        Organizational and Operational Transformation
+                                    </h4>
+                                    <p class="text-dark-gray mb-15px fs-18">
+                                        We help businesses adapt, evolve, and scale, leveraging operational
+                                        restructuring and technology-driven innovation to optimize efficiency. By
+                                        aligning strategy with execution, we enable businesses to streamline operations,
+                                        foster agility, and stay ahead in a dynamic marketplace.
+                                    </p>
+                                    <ul class="fs-18 lh-30 text-dark-gray mb-15px list-style-04">
+                                        <li>Accounting/Book Keeping and Financial Reporting/Forecasting</li>
+                                        <li>Operations Transition- planning and execution</li>
+                                        <li>Process Optimization</li>
+                                        <li>Interim CXO and Executive Leadership</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end section -->
+    <section class="pt-15 pb-15 align-items-center justify-content-center throught-box">
+        <div class="d-flex align-items-center flex-column text-center z-index-1  position-relative px-3">
+            <p class="text-white w-75 md-w-100 fs-28">Red Lion Advisory has been instrumental in helping us navigate a
+                critical
+                growth phase.
+                Their team brought
+                structure, strategic insight, and hands-on support that felt like an extension of our executive team. We
+                couldn't have asked for a better partner.</p>
+            <h4 class="text-white w-100 fs-22 mb-0">- David S.</h4>
+        </div>
+    </section>
+
+    <!-- start footer -->
+    <footer class="footer-light bg-very-light-gray">
+        <div class="container">
+            <div class="row justify-content-center mb-5 xs-mb-20px">
+                <div class="col-md-12 col-sm-10 text-center">
+                    <h4 class="alt-font text-dark-gray fw-500 ls-minus-1px">Interested? <a
+                            href="mailto:info@yourdomain.com"
+                            class="text-base-color fw-500 text-decoration-line-bottom-medium">Send message</a></h4>
+                </div>
+            </div>
+            <div class="row justify-content-center mb-5">
+                <!-- start footer column -->
+                <div class="col-sm-12 md-mt-0 mt-35px text-center last-paragraph-no-margin">
+                    <a href="javascript:void(0)" class="footer-logo mb-25px sm-mb-20px d-inline-block"><img
+                            src="images/redLine/RLA-Logo.png" data-at2x="images/redLine/RLA-Logo.png"
+                            alt="Red Lion Advisory logo"></a>
+                </div>
+                <!-- end footer column -->
+                <!-- start footer column -->
+                <div class="col-sm-12 md-mt-15px mt-35px text-center last-paragraph-no-margin">
+                    <ul class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3 gap-md-5">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="why-us.html">Why us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="case-studies.html">Case Studies</a></li>
+                        <li><a href="contact.html">Contact us</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-12 md-mt-15px mt-35px text-center last-paragraph-no-margin social-platform">
+                    <a href="https://www.linkedin.com/company/redlionadvisory/" target="_blank"
+                        rel="noopener noreferrer"><img src="images/redLine/linkedin.svg" alt="LinkedIn"></a>
+                    <a href="https://x.com/AdvisoryLi92397" target="_blank" rel="noopener noreferrer"><img
+                            src="images/redLine/twitter.svg" alt="Twitter"></a>
+                </div>
+                <!-- end footer column -->
+            </div>
+            <div class="row align-items-center justify-content-center pt-3 border-top border-color-medium-gray fs-14">
+                <div class="col-md-12 text-center sm-mb-15px">
+                    <span class="text-dark-gray">&copy; 2025 Red Lion Advisory. All Rights Reserved.</span>
+                </div>
+            </div>
+    </footer>
+    <!-- end footer -->
+    <!-- start scroll progress -->
+    <div class="scroll-progress d-none d-xxl-block">
+        <a href="javascript:void(0)" class="scroll-top" aria-label="scroll">
+            <span class="scroll-text">Scroll</span><span class="scroll-line"><span class="scroll-point"></span></span>
+        </a>
+    </div>
+    <!-- end scroll progress -->
+    <!-- javascript libraries -->
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/vendors.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+/* Sticky header styles for index.html */
+.sticky-header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  background: #111 !important;
+  transition: background 0.3s;
+}
+
+.sticky-header .navbar {
+  background: transparent !important;
+}
+
+.sticky-header.scrolled {
+  background: #111 !important;
+}
+
+/* .sticky-header .navbar,
+.sticky-header .navbar * {
+  color: #fff !important;
+} */
