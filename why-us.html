@@ -2,14 +2,54 @@
 <html class="no-js" lang="en">
 
 <head>
-    <title>Red Lion Advisory - F.A.S.T. (Finance, Analytics, Strategy and
-        Transformation) </title>
+    <title>Red Lion Advisory — F.A.S.T. | Finance • Analytics • Strategy • Transformation</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="author" content="ThemeZaa">
+    <meta name="author" content="Red Lion Advisory">
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <meta name="description" content="Red Lion Advisory - F.A.S.T. (Finance, Analytics, Strategy and
-      Transformation)">
+    <meta name="description"
+        content="Red Lion Advisory (F.A.S.T.) helps private companies, founders, and family offices navigate growth, capital events, and strategic inflection points with financial precision and executional depth.">
+    <meta name="robots" content="index, follow">
+    <!-- Canonical will be set to the current page URL by JS so it works in any environment -->
+    <link rel="canonical" href="">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:site_name" content="Red Lion Advisory">
+    <meta property="og:title" content="Red Lion Advisory — F.A.S.T. | Finance, Analytics, Strategy & Transformation">
+    <meta property="og:description"
+        content="We help private companies, founders, and family offices navigate growth, capital events, and strategic inflection points—with clarity, speed, and executional depth.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="images/redLine/RLA-Logo.png">
+    <meta property="og:locale" content="en_US">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Red Lion Advisory — F.A.S.T.">
+    <meta name="twitter:description"
+        content="Finance, Analytics, Strategy & Transformation for private companies and founders.">
+    <meta name="twitter:image" content="images/redLine/RLA-Logo.png">
+    <!-- JSON-LD structured data (Organization + Website) -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@graph": [
+                {
+                    "@type": "Organization",
+                    "name": "Red Lion Advisory",
+                    "url": "",
+                    "logo": "images/redLine/RLA-Logo.png",
+                    "sameAs": [
+                        "https://www.linkedin.com/company/redlionadvisory/",
+                        "https://x.com/AdvisoryLi92397"
+                    ]
+                },
+                {
+                    "@type": "WebSite",
+                    "name": "Red Lion Advisory",
+                    "url": ""
+                }
+            ]
+        }
+        </script>
     <!-- favicon icon -->
     <link rel="shortcut icon" href="images/redLine/rla-logo-touch-icon.png">
     <link rel="apple-touch-icon" href="images/redLine/rla-logo-touch-icon.png">
@@ -19,36 +59,69 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- style sheets and font icons -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
+
+
     <link rel="stylesheet" href="css/vendors.min.css" />
     <link rel="stylesheet" href="css/icon.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/responsive.css" />
     <link rel="stylesheet" href="css/myfont.css" />
-<link rel="stylesheet" href="css/finance.css" />
+    <link rel="stylesheet" href="css/finance.css" />
+    <link rel="stylesheet" href="css/work/styles.css" />
+    <script>
+        // Set canonical and Open Graph URL dynamically so this file can be served from any host
+        (function () {
+            try {
+                var canonical = document.querySelector('link[rel="canonical"]');
+                var ogUrl = document.querySelector('meta[property="og:url"]');
+                var orgJson = document.querySelector('script[type="application/ld+json"]');
+                var loc = window.location.href.split('?')[0].split('#')[0];
+                if (canonical) canonical.href = loc;
+                if (ogUrl) ogUrl.content = loc;
+                if (orgJson) {
+                    try {
+                        var data = JSON.parse(orgJson.textContent);
+                        if (Array.isArray(data['@graph'])) {
+                            data['@graph'].forEach(function (node) { if (node.url === "") node.url = loc; });
+                            orgJson.textContent = JSON.stringify(data);
+                        }
+                    } catch (e) { /* ignore JSON errors */ }
+                }
+            } catch (e) { }
+        })();
+    </script>
 </head>
 
-<body data-mobile-nav-style="full-screen-menu" data-mobile-nav-bg-color="#bc8947" class="custom-cursor">
+<body data-mobile-nav-style="full-screen-menu" data-mobile-nav-bg-color="#0d1a1d" class="custom-cursor">
+    <!-- Primary page heading (visually hidden for layout): improves SEO and accessibility -->
+    <h1 style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;">Red Lion Advisory —
+        Finance, Analytics, Strategy & Transformation</h1>
     <!-- start cursor -->
     <div class="cursor-page-inner">
         <div class="circle-cursor circle-cursor-inner"></div>
         <div class="circle-cursor circle-cursor-outer"></div>
     </div>
     <!-- end cursor -->
+    <!-- start header -->
     <header>
         <!-- start navigation -->
-        <nav class="navbar navbar-expand-lg bg-transparent disable-fixed">
+        <nav class="navbar navbar-expand-lg bg-transparent">
             <div class="container-fluid">
                 <div class="col-auto col-lg-2 me-lg-0 me-auto">
                     <a class="navbar-brand" href="/">
                         <img src="images/redLine/LionRedLionLogoW.png" data-at2x="images/redLine/LionRedLionLogoW.png"
-                            alt="" class="default-logo">
+                            alt="Red Lion Advisory logo" class="default-logo">
                         <img src="images/redLine/LionRedLionLogoW.png" data-at2x="images/redLine/LionRedLionLogoW.png"
-                            alt="" class="alt-logo">
-                        <img src="images/redLine/RLA-Logo.png" data-at2x="images/redLine/RLA-Logo.png" alt=""
-                            class="mobile-logo">
+                            alt="Red Lion Advisory logo" class="alt-logo">
+                        <img src="images/redLine/RLA-Logo.png" data-at2x="images/redLine/RLA-Logo.png"
+                            alt="Red Lion Advisory mark" class="mobile-logo">
                     </a>
                 </div>
-                <div class="col-auto col-lg-8 menu-order position-static">
+                <div class="col-auto col-lg-8 menu-order position-static align-items-center d-flex">
                     <button class="navbar-toggler float-start" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarNav" aria-expanded="false" aria-controls="navbarNav"
                         aria-label="Toggle navigation">
@@ -163,35 +236,54 @@
     </section>
 
 
-    <!-- start section -->
-    <!-- style="background-image:url('images/redLine/RLX-box.png');" -->
-    <section class="big-section overflow-visible cover-background sm-background-image-none">
-        <div class="container">
-            <!-- start row -->
-            <div class="row align-items-center">
-                <div class="col-xl-12"
-                    data-anime='{ "el": "childs", "translateX": [50, 0], "opacity": [0,1], "duration": 800, "delay": 0, "staggervalue": 200, "easing": "easeOutQuad" }'>
-                    <div class="d-flex align-items-center justify-content-center flex-column mb-2">
-                        <h2 class="alt-font fw-600 ls-minus-2px text-dark-gray text-center ft-md-32 ft-md-32">Capital Strategy &
-                            Relationships</h2>
-                        <p class="text-center w-100 w-md-75"><span class="text-black">Client Focus:</span><br>We advise companies
-                            and investors with capital needs ranging from sub-$1M to $150M+, across growth,
-                            transition, and special situation—providing strategic guidance, structuring expertise, and
-                            access to funding partners.</p>
-                    </div>
-                    <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 justify-content-center"
-                        data-anime='{ "el": "childs", "willchange": "transform", "perspective": [1200,1200], "translateY": [0, 0], "scale": [1.1, 1], "rotateX": [30, 0], "opacity": [0,1], "duration": 1000, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
-                        <!-- start features box item -->
-                        <div class="col icon-with-text-style-04 transition-inner-all md-mb-30px">
-                            <div
-                                class="feature-box bg-white h-100 justify-content-start p-10  xs-p-10 lg-p-15 box-shadow-quadruple-large box-shadow-quadruple-large-hover border-radius-5px align-items-start">
-                                <div
-                                    class="feature-box-icon feature-box-icon-rounded rounded-circle h-90px w-90px fs-24 text-dark-gray border border-2 border-color-extra-medium-gray mb-25px fw-500">
-                                    <img src="images/redLine/svg/costumer.svg" alt="Integrated Expertise"
-                                        style="width:40px; height:40px;">
-                                </div>
-                                <div class="feature-box-content text-start w-100">
-                                    <h2 class="d-inline-block alt-font text-dark-gray fw-500 mb-5px fs-22">Equity
+
+           <!-- About Section -->
+    <section class="about-section">
+        <div class="section-subtitle">Client Focus:</div>
+        <h2 class="section-header">Capital Strategy & Relationships</h2>
+        
+        <div class="about-grid">
+            <div class="about-card">
+                <div class="card-icon"><svg version="1.1" id="fi_87159" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 238.126 238.126" style="enable-background:new 0 0 238.126 238.126;" xml:space="preserve">
+<path d="M205.071,98.678c-1.194-2.728-3.891-4.49-6.869-4.49h-62.33l30.023-84.167c1.197-3.357-0.134-7.094-3.184-8.938
+	c-3.052-1.845-6.979-1.287-9.395,1.333L34.411,131.355c-2.019,2.189-2.551,5.366-1.355,8.094c1.194,2.728,3.891,4.49,6.869,4.49
+	h40.521c4.143,0,7.5-3.358,7.5-7.5s-3.357-7.5-7.5-7.5H57.043l82.365-89.315l-21.24,59.543c-0.818,2.297-0.432,4.849,0.974,6.842
+	c1.405,1.993,3.73,3.178,6.169,3.178h55.772l-82.353,89.305l21.243-59.533c0.82-2.297,0.472-4.849-0.934-6.842
+	s-3.691-3.179-6.13-3.179h-0.074c-3.525,0-6.455,2.432-7.25,5.709l-33.348,93.456c-1.198,3.357,0.133,7.094,3.183,8.938
+	c1.205,0.729,2.547,1.083,3.878,1.083c2.039,0,4.055-0.831,5.517-2.416l118.899-128.938
+	C205.734,104.582,206.266,101.406,205.071,98.678z"></path>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg></div>
+<h2 class="d-inline-block alt-font text-dark-gray fw-500 mb-5px fs-22">Equity
                                         Capital Network</h2>
                                     <ul class="p-0 m-0 list-style-02 text-left">
                                         <li class="pb-10px"><i
@@ -212,23 +304,50 @@
                                         <li class="pb-10px"><i
                                                 class="fa-solid fa-check fs-16 text-white me-10px"></i>Accredited
                                             Investors / HNWIs</li>
-                                    </ul>
-                                </div>
-                                <div class="feature-box-overlay bg-white border-radius-6px"></div>
-                            </div>
-                        </div>
-                        <!-- end features box item -->
-                        <!-- start features box item -->
-                        <div class="col icon-with-text-style-04 transition-inner-all md-mb-30px">
-                            <div
-                                class="feature-box bg-white h-100 justify-content-start p-10 xs-p-10 lg-p-15 box-shadow-quadruple-large box-shadow-quadruple-large-hover border-radius-5px  align-items-start">
-                                <div
-                                    class="feature-box-icon feature-box-icon-rounded rounded-circle h-90px w-90px fs-24 text-dark-gray border border-2 border-color-extra-medium-gray mb-25px fw-500">
-                                    <img src="images/redLine/svg/growth.svg" alt="Integrated Expertise"
-                                        style="width:40px; height:40px;">
-                                </div>
-                                <div class="feature-box-content w-100 text-start">
-                                    <h2 class="d-inline-block alt-font text-dark-gray fw-500 mb-5px fs-22">Debt Capital
+                                    </ul>                
+            </div>
+
+            <div class="about-card">
+                <div class="card-icon"><svg version="1.1" id="fi_87159" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 238.126 238.126" style="enable-background:new 0 0 238.126 238.126;" xml:space="preserve">
+<path d="M205.071,98.678c-1.194-2.728-3.891-4.49-6.869-4.49h-62.33l30.023-84.167c1.197-3.357-0.134-7.094-3.184-8.938
+	c-3.052-1.845-6.979-1.287-9.395,1.333L34.411,131.355c-2.019,2.189-2.551,5.366-1.355,8.094c1.194,2.728,3.891,4.49,6.869,4.49
+	h40.521c4.143,0,7.5-3.358,7.5-7.5s-3.357-7.5-7.5-7.5H57.043l82.365-89.315l-21.24,59.543c-0.818,2.297-0.432,4.849,0.974,6.842
+	c1.405,1.993,3.73,3.178,6.169,3.178h55.772l-82.353,89.305l21.243-59.533c0.82-2.297,0.472-4.849-0.934-6.842
+	s-3.691-3.179-6.13-3.179h-0.074c-3.525,0-6.455,2.432-7.25,5.709l-33.348,93.456c-1.198,3.357,0.133,7.094,3.183,8.938
+	c1.205,0.729,2.547,1.083,3.878,1.083c2.039,0,4.055-0.831,5.517-2.416l118.899-128.938
+	C205.734,104.582,206.266,101.406,205.071,98.678z"></path>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg></div>
+<h2 class="d-inline-block alt-font text-dark-gray fw-500 mb-5px fs-22">Debt Capital
                                         Network</h2>
                                     <ul class="p-0 m-0 list-style-02 text-left">
                                         <li class="pb-10px"><i
@@ -246,128 +365,112 @@
                                         <li class="pb-10px"><i
                                                 class="fa-solid fa-check fs-16 text-white me-10px"></i>Senior
                                             Lenders & Specialty Finance</li>
-                                    </ul>
-                                </div>
-                                <div class="feature-box-overlay bg-white border-radius-6px"></div>
-                            </div>
-                        </div>
-                        <!-- end features box item -->
-                        <!-- start features box item -->
-                        <div class="col icon-with-text-style-04 transition-inner-all">
-                            <div
-                                class="feature-box bg-white h-100 justify-content-start p-10 xs-p-10 lg-p-15 box-shadow-quadruple-large box-shadow-quadruple-large-hover border-radius-5px  align-items-start">
-                                <div
-                                    class="feature-box-icon feature-box-icon-rounded rounded-circle h-90px w-90px fs-24 text-dark-gray border border-2 border-color-extra-medium-gray mb-25px fw-500">
-                                    <img src="images/redLine/svg/deal.svg" alt="Integrated Expertise"
-                                        style="width:40px; height:40px;">
-                                </div>
-                                <div class="feature-box-content w-100 text-start">
-                                    <h2 class="d-inline-block alt-font text-dark-gray fw-500 mb-5px fs-22">Supported
-                                        Capital Uses</h2>
-                                    <ul class="p-0 m-0 list-style-02 text-left">
-                                        <li class="pb-10px"><i
-                                                class="fa-solid fa-check fs-16 text-white me-10px"></i>Recapitalizations
-                                        </li>
-                                        <li class="pb-10px"><i
-                                                class="fa-solid fa-check fs-16 text-white me-10px"></i>M&A
-                                            Financing</li>
-                                        <li class="pb-10px"><i
-                                                class="fa-solid fa-check fs-16 text-white me-10px"></i>Liquidity
-                                            Events</li>
-                                        <li class="pb-10px"><i
-                                                class="fa-solid fa-check fs-16 text-white me-10px"></i>Turnaround
-                                            Funding / Special Situation</li>
-                                        <li class="pb-10px"><i
-                                                class="fa-solid fa-check fs-16 text-white me-10px"></i>Debt
-                                            Refinancing</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="feature-box-overlay bg-white border-radius-6px"></div>
-                        <div
-                            class="w-100 align-items-center justify-content-center mt-10 d-flex flex-column text-center">
-                            <h6 class="w-75 text-black">Red Lion Advisory connects clients to aligned capital and
-                                structures solutions around long-term goals.</h6>
-                            <p>Whether raising equity, restructuring debt, or evaluating bespoke capital solutions, our
-                                team brings decades of
-                                experience across corporate
-                                finance, multi-bank syndications, and institutional treasury to deliver outcomes that
-                                are flexible, scalable, and
-                                execution-ready. We approach each
-                                engagement with a hands-on, partner-driven mindset—aligning capital structure with
-                                strategy, growth trajectory, and
-                                long-term value creation.</p>
-                        </div>
-                        <!-- end features box item -->
-                    </div>
-                </div>
+                                    </ul>                
             </div>
-            <!-- end row -->
-        </div>
-    </section>
-    <!-- end section -->
 
-    <!-- start section -->
-    <section class="bg-very-light-gray overflow-hidden position-relative">
-        <div class="container z-index-1 position-relative">
-            <div class="row justify-content-center mb-2">
-                <div class="col-lg-8 text-center text-white"
-                    data-anime='{ "el": "childs", "translateY": [50, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 200, "easing": "easeOutQuad" }'>
-                    <h2 class="alt-font text-white fw-600 ls-minus-1px ft-md-32">Typical Capital Raise Process</h2>
-                    <p class="w-100 mx-auto">We guide clients through the full capital raise lifecycle—from strategic
+            <div class="about-card">
+                <div class="card-icon"><svg id="fi_2652673" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512"
+                        width="512" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="m510.503 242.483-56.095-151.028c-2.218-5.973-6.644-10.729-12.461-13.396-5.82-2.662-12.308-2.912-18.281-.698l-37.546 13.943c-12.36 4.592-18.682 18.385-14.092 30.745l.609 1.64c-8.883 3.372-18.797-.311-33.951-6.658-22.627-9.473-53.316-22.193-92.275 2.174-31.62-19.681-56.431-14.826-78.404-10.451-11.161 2.218-21.792 4.306-32.771 3.17-.309-2.885-1.1-5.728-2.465-8.395-2.919-5.698-7.865-9.914-13.925-11.869l-38.115-12.295c-6.063-1.955-12.54-1.423-18.236 1.489-5.696 2.919-9.912 7.865-11.865 13.925l-49.473 153.328c-4.047 12.549 2.869 26.051 15.419 30.098l38.114 12.299c2.405.777 4.874 1.162 7.333 1.162 3.743 0 7.464-.892 10.901-2.651 2.123-1.088 3.958-2.537 5.629-4.141.235 1.16.55 2.307.834 3.459l-9.542 17.839c-4.092 7.655-4.885 16.937-2.171 25.463 2.642 8.302 8.214 14.932 15.522 18.583 6.369 3.408 13.385 4.473 20.047 3.491-1.903 6.311-1.867 13.232.196 19.718 2.642 8.302 8.214 14.934 15.522 18.585 7.644 4.088 16.443 4.941 24.781 2.419 3.331-1.011 6.426-2.511 9.2-4.439 2.676 8.173 8.205 14.696 15.43 18.306 7.642 4.088 16.441 4.941 24.779 2.419 1.851-.563 3.631-1.275 5.32-2.128 2.507 10.065 9.664 19.029 18.585 23.801 4.261 2.277 9.279 3.745 14.488 3.745 9.466 0 19.56-4.851 26.862-18.5l1.424-2.664c.555.29 1.107.581 1.614.846l3.808 1.986c4.664 2.401 9.223 3.459 13.509 3.459 10.693 0 19.675-6.59 24.267-15.342 3.162-6.022 4.275-13.182 2.741-20.132 3.858.2 7.759-.259 11.572-1.414 8.563-2.595 15.59-8.344 19.786-16.189 3.39-6.338 4.617-13.452 3.595-20.468 7.162 2.973 15.083 3.36 22.637 1.072 8.637-2.617 15.725-8.419 19.957-16.331 3.459-6.471 4.687-13.743 3.588-20.9 11.673 4.653 22.936 2.525 30.756-6.043 7.928-8.683 10.594-21.986 7.629-33.857.613-.22 1.234-.443 1.924-.691l.11-.039.8 2.152c3.577 9.624 12.732 15.585 22.443 15.585 2.761 0 5.565-.48 8.299-1.495l37.544-13.943c12.362-4.592 18.684-18.382 14.094-30.744zm-438.88 28.357c-.822 2.545-2.599 4.626-5.007 5.858-2.412 1.232-5.137 1.459-7.678.64l-38.116-12.302c-5.288-1.705-8.203-7.394-6.498-12.682l49.475-153.327c.82-2.543 2.597-4.624 5.004-5.856 1.455-.745 3.029-1.124 4.608-1.124 1.032 0 2.063.16 3.068.484.002 0 .002 0 .002.002l38.116 12.297c2.543.82 4.624 2.597 5.856 5.004 1.232 2.408 1.459 5.133.64 7.678l-39.497 122.418c-.173.334-.34.676-.459 1.046-.347 1.07-.615 2.153-.92 3.23zm17.93 67.089c-4.108-2.052-7.196-5.777-8.693-10.489-1.588-4.989-1.155-10.362 1.187-14.741l10.78-20.155c.002-.002.005-.004.006-.007l5.149-9.628c4.797-8.964 15.912-12.428 24.932-7.876 5.917 4.137 14.792 12.934 8.058 25.522l-3.669 6.86-12.279 22.957c-4.872 9.072-16.214 12.513-25.471 7.557zm61.251 34.209c-2.342 4.383-6.277 7.597-11.079 9.052-4.799 1.455-9.858.964-14.407-1.466-4.108-2.052-7.196-5.779-8.693-10.491-1.588-4.986-1.153-10.36 1.189-14.738l9.412-17.594 12.279-22.957c2.342-4.381 6.277-7.594 11.076-9.049 4.802-1.459 9.856-.966 14.241 1.378 4.381 2.342 7.594 6.277 9.049 11.079 1.455 4.799.964 9.858-1.381 14.241l-3.448 6.45c-.002.007-.007.013-.011.02l-14.009 26.191c0 .002 0 .002-.002.004zm38.332 25.337c-4.802 1.455-9.856.964-14.407-1.466-4.108-2.052-7.194-5.777-8.693-10.488-1.583-4.982-1.155-10.344 1.178-14.72l.011-.02 14.009-26.191c.001-.003.002-.006.003-.009l.008-.013c2.345-4.372 6.275-7.576 11.067-9.029 4.797-1.462 9.856-.968 14.238 1.378 9.094 4.865 12.536 16.223 7.673 25.317l-7.004 13.097-6.209 11.608c-.002.004-.005.009-.007.013l-.788 1.473c-2.342 4.379-6.279 7.595-11.079 9.05zm34.446 22.713c-9.07-4.851-15.56-17.02-10.369-26.725l6.209-11.608.007-.016c2.421-4.513 6.725-8.139 11.813-9.946 5.079-1.806 10.178-1.565 14.362.673 9.117 4.874 10.588 9.139 10.898 11.923.473 4.209-1.309 9.806-5.77 18.146-.003.007-.005.014-.008.02l-4.521 8.453c-7.658 14.33-17.457 11.839-22.621 9.08zm67.194-20.695c-3.263 6.227-10.461 10.502-19.191 6.011l-3.707-1.935c-.613-.324-1.185-.624-1.716-.901 2.802-6.232 4.844-13.004 4.092-19.718-.848-7.571-5.049-13.885-12.671-19.21l27.249 14.633c9.106 6.394 9.075 15.155 5.944 21.12zm116.664-103.306c-4.455 4.885-10.57 5.299-18.18 1.225l-19.734-10.554c-.014-.007-.027-.014-.041-.02-.202-.108-.413-.17-.62-.256l-63.633-34.541c-3.351-1.827-7.556-.579-9.38 2.781-1.822 3.358-.579 7.556 2.781 9.38l64.979 35.272c4.301 2.522 7.495 6.489 8.965 11.333 1.545 5.099 1.025 10.47-1.466 15.126-2.489 4.655-6.669 8.07-11.768 9.615-5.108 1.543-10.475 1.025-15.126-1.464l-19.62-10.494c-.341-.278-.709-.532-1.111-.747l-47.35-25.317c-3.374-1.806-7.563-.527-9.362 2.84-1.802 3.369-.532 7.561 2.84 9.362l46.16 24.681c.342.28.713.535 1.118.751 4.588 2.453 7.953 6.57 9.475 11.597 1.522 5.025 1.009 10.317-1.444 14.903-2.453 4.588-6.572 7.95-11.597 9.475-5.022 1.52-10.317 1.009-14.903-1.444l-10.016-5.356c-.504-.269-1.028-.448-1.557-.583l-40.426-21.707c-3.367-1.82-7.563-.547-9.367 2.822-1.809 3.365-.545 7.561 2.822 9.367l8.496 4.562c-5.768-2.126-12.086-2.528-18.408-.954 1.786-13.099-4.572-26.54-16.892-33.13-7.57-4.049-16.281-4.93-24.549-2.486-.059-2.973-.527-5.959-1.414-8.889-2.527-8.34-8.128-15.182-15.768-19.268-7.68-4.104-16.283-4.811-24.069-2.64-.133-11.754-7.594-21.529-16.479-27.767-.304-.234-.628-.444-.973-.628-13.265-7.092-29.297-4.027-39.123 6.468-.159-7.195.825-14.42 2.824-21.491l39.489-122.393c13.349 1.545 25.7-.904 37.689-3.294 19.932-3.964 38.862-7.732 63.323 5.601-5.329 4.243-10.689 9.085-16.018 14.468-4.218 4.266-8.556 8.525-12.788 12.68-15.428 15.153-28.752 28.24-32.562 37.528-.921 2.245-.599 4.808.849 6.754 27.538 37.035 60.911 24.468 87.716 14.374 20.096-7.57 37.452-14.11 51.278-3.169.261.207.536.394.824.561 6.603 3.826 15.698 8.317 26.229 13.518 25.461 12.576 60.332 29.799 69.343 43.495 6.055 9.197 4.134 21.929-1.456 28.053zm11.941-37.106c-12.079-16.381-46.128-33.231-73.697-46.845-10.085-4.982-18.826-9.297-25.011-12.849-19.86-15.349-42.461-6.84-64.325 1.394-25.914 9.754-48.447 18.236-69.03-6.252 4.835-7.225 16.38-18.563 27.598-29.58 4.279-4.203 8.662-8.509 12.928-12.82 7.392-7.466 14.789-13.746 22.001-18.709 34.854-23.968 60.692-13.169 83.495-3.626 10.662 4.464 21.545 9.02 32.31 9.02 3.954 0 7.887-.722 11.793-2.181l45.061 121.324c-1.05.378-2.113.761-3.123 1.124zm72.213 1.174-37.544 13.943c-5.225 1.928-11.025-.73-12.957-5.937l-56.093-151.033c-.93-2.504-.822-5.236.304-7.696 1.128-2.459 3.128-4.326 5.633-5.257l37.544-13.943c1.128-.419 2.302-.628 3.475-.628 1.437 0 2.872.313 4.225.932 2.457 1.126 4.324 3.128 5.254 5.635l56.095 151.029c1.935 5.21-.729 11.02-5.936 12.955z">
+                        </path>
+                    </svg></div>
+                <h2 class="d-inline-block alt-font text-dark-gray fw-500 mb-5px fs-22">Supported
+                    Capital Uses</h2>
+                <ul class="p-0 m-0 list-style-02 text-left">
+                    <li class="pb-10px"><i class="fa-solid fa-check fs-16 text-white me-10px"></i>Recapitalizations
+                    </li>
+                    <li class="pb-10px"><i class="fa-solid fa-check fs-16 text-white me-10px"></i>M&A
+                        Financing</li>
+                    <li class="pb-10px"><i class="fa-solid fa-check fs-16 text-white me-10px"></i>Liquidity
+                        Events</li>
+                    <li class="pb-10px"><i class="fa-solid fa-check fs-16 text-white me-10px"></i>Turnaround
+                        Funding / Special Situation</li>
+                    <li class="pb-10px"><i class="fa-solid fa-check fs-16 text-white me-10px"></i>Debt
+                        Refinancing</li>
+                </ul>
+            </div>
+        </div>
+        <div class="w-100 align-items-center justify-content-center mt-10 d-flex flex-column text-left">
+            <h6 class="w-100 text-black">Red Lion Advisory connects clients to aligned capital and
+                structures solutions around long-term goals.</h6>
+            <p>Whether raising equity, restructuring debt, or evaluating bespoke capital solutions, our
+                team brings decades of
+                experience across corporate
+                finance, multi-bank syndications, and institutional treasury to deliver outcomes that
+                are flexible, scalable, and
+                execution-ready. We approach each
+                engagement with a hands-on, partner-driven mindset—aligning capital structure with
+                strategy, growth trajectory, and
+                long-term value creation.</p>
+        </div>
+                        
+    </section>
+    <!-- Horizontal scroll section -->
+    <section class="rla-horizontal-scroll-wrapper dark-bg">        
+        <div class="rla-sticky-container">
+            <div class="rla-bg-very-light-gray">
+                <!-- Fixed Header Section -->
+                <div class="rla-header-section">
+                    <div class="rla-container">
+                        <div class="rla-text-center rla-mb-2">
+                            <h2 class="rla-fw-600 rla-ls-minus-1px text-white">Typical Capital Raise Process</h2>
+                            <p class="text-white" style="max-width: 100%; margin: 0 auto; ">We guide clients through the full capital raise lifecycle—from strategic
                         preparation to targeted investor outreach and
                         final negotiations. Our hands-on approach ensures materials are market-ready, investor
                         conversations are managed with
                         precision, and deal execution is tightly coordinated to maximize outcomes..</p>
-                </div>
-            </div>
-            <div class="col-12 row position-relative mx-auto md:mx-init-0 gap-3 gap-md-0">
-                <div class="col-md-4">
-                    <div class="services-box border border-color-white p-5 xxl-p-6 box-shadow-extra-large h-100">
-                        <div class="services-box-icon">
-                            <i class="line-icon-Circular-Point icon-extra-large text-white mb-25px"></i>
-                        </div>
-                        <div class="services-box-content">
-                            <span class="font-semibold mb-15px lh-20 text-white alt-font text-dark-gray  d-block">
-                                Phase 1
-                            </span>
-                            <a href="javascript:void(0)"
-                                class="d-block alt-font text-white fs-22 md-fs-20 fw-500 mb-10px">Preparation &
-                                Strategy</a>
-                            <ul class="p-0 m-0 list-style-02 text-left text-white">
-                                <li class="pb-10px"><i class="fa-solid fa-check fs-16 text-white me-10px"></i>Define
-                                    capital needs and investor profile</li>
-                                <li class="pb-10px"><i class="fa-solid fa-check fs-16 text-white me-10px"></i>Align on
-                                    scope, structure, and timeline</li>
-                                <li class="pb-10px"><i class="fa-solid fa-check fs-16 text-white me-10px"></i>Conduct
-                                    diligence and financial review</li>
-                                <li class="pb-10px"><i
-                                        class="fa-solid fa-check fs-16 text-white me-10px"></i>Incorporate
-                                    institutional quality, robust financial forecasting and modeling</li>
-                                <li class="pb-10px"><i class="fa-solid fa-check fs-16 text-white me-10px"></i>Develop
-                                    pitch materials</li>
-                                <li class="pb-10px"><i class="fa-solid fa-check fs-16 text-white me-10px"></i>Populate
-                                    and manage data room</li>
-                                <li class="pb-10px"><i class="fa-solid fa-check fs-16 text-white me-10px"></i>Set
-                                    initial terms and raise strategy</li>
-                            </ul>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="services-box border border-color-white p-5 xxl-p-6 box-shadow-extra-large h-100">
-                        <div class="services-box-icon">
-                            <i class="line-icon-Transform icon-extra-large text-white mb-25px"></i>
+                <!-- Horizontal Scrolling Boxes -->
+                <div class="rla-horizontal-content">
+                    <div class="rla-services-box-wrapper">
+                        <div class="rla-services-box bg-white">
+                            <div class="rla-services-box-icon">
+                                <!-- <i class="fa-solid fa-shield-halved"></i> -->
+                                 <i class="line-icon-Circular-Point icon-extra-large text-white"></i>
+                            </div>
+                            <div class="rla-services-box-content">
+                                <span class="font-semibold mb-15px lh-20 text-black alt-font d-block">
+                                    Phase 1
+                                </span>
+                                <a href="javascript:void(0)">Preparation & Strategy</a>
+                                <div>
+                                    <ul class="rla-list-style-02 p-0 m-0 list-style-02 text-left text-white">
+                                        <li class="pb-10px"><i class="fa-solid fa-check fs-16 text-white me-10px"></i>Define
+                                            capital needs and investor profile</li>
+                                        <li class="pb-10px"><i class="fa-solid fa-check fs-16 text-white me-10px"></i>Align on
+                                            scope, structure, and timeline</li>
+                                        <li class="pb-10px"><i class="fa-solid fa-check fs-16 text-white me-10px"></i>Conduct
+                                            diligence and financial review</li>
+                                        <li class="pb-10px"><i
+                                                class="fa-solid fa-check fs-16 text-white me-10px"></i>Incorporate
+                                            institutional quality, robust financial forecasting and modeling</li>
+                                        <li class="pb-10px"><i class="fa-solid fa-check fs-16 text-white me-10px"></i>Develop
+                                            pitch materials</li>
+                                        <li class="pb-10px"><i class="fa-solid fa-check fs-16 text-white me-10px"></i>Populate
+                                            and manage data room</li>
+                                        <li class="pb-10px"><i class="fa-solid fa-check fs-16 text-white me-10px"></i>Set
+                                            initial terms and raise strategy</li>
+                                    </ul>                                       
+                                </div>
+                            </div>
                         </div>
-                        <div class="services-box-content">
-                            <span class="font-semibold mb-15px lh-20 text-white alt-font text-dark-gray  d-block">
+                    </div>
+                    <div class="rla-services-box-wrapper">
+                        <div class="rla-services-box bg-white">
+                            <div class="rla-services-box-icon">
+                                <!-- <i class="fa-solid fa-gear"></i> -->
+                                 <i class="line-icon-Mail-Settings icon-extra-large text-white"></i>
+                            </div>
+                            <div class="rla-services-box-content">
+                                                                                            <span class="font-semibold mb-15px lh-20 text-black alt-font d-block">
                                 Phase 2
                             </span>
-                            <a href="javascript:void(0)"
-                                class="d-block alt-font text-white fs-22 md-fs-20 fw-500 mb-10px">Market Outreach &
-                                Engagement</a>
-                            <ul class="p-0 m-0 list-style-02 text-left text-white">
+                                <a href="javascript:void(0)">Embedded Partnerships, Not Arms-Length Advice</a>
+                                <div>
+                            <ul class="p-0 m-0 list-style-02 text-left text-black">
                                 <li class="pb-10px"><i class="fa-solid fa-check fs-16 text-white me-10px"></i>Build and
                                     prioritize investor list</li>
                                 <li class="pb-10px"><i class="fa-solid fa-check fs-16 text-white me-10px"></i>Manage
@@ -382,22 +485,23 @@
                                 <li class="pb-10px"><i class="fa-solid fa-check fs-16 text-white me-10px"></i>Refine
                                     strategy from investor feedback</li>
                             </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="services-box border border-color-white p-5 xxl-p-6 box-shadow-extra-large h-100">
-                        <div class="services-box-icon">
-                            <i class="line-icon-Coin icon-extra-large text-white mb-25px"></i>
-                        </div>
-                        <div class="services-box-content">
-                            <span class="font-semibold mb-15px lh-20 text-white alt-font d-block">
+                    <div class="rla-services-box-wrapper">
+                        <div class="rla-services-box bg-white">
+                            <div class="rla-services-box-icon">
+                                <!-- <i class="fa-solid fa-handshake"></i> -->
+                                 <i class="line-icon-Handshake icon-extra-large text-white"></i>
+                            </div>
+                            <div class="rla-services-box-content">
+                                                            <span class="font-semibold mb-15px lh-20 text-black alt-font d-block">
                                 Phase 3
                             </span>
-                            <a href="javascript:void(0)"
-                                class="d-inline-block alt-font text-white fs-22 md-fs-20 fw-500 mb-10px">Negotiation &
-                                Close</a>
-                            <ul class="p-0 m-0 list-style-02 text-left text-white">
+                                <a href="javascript:void(0)">Independent Thinking, Informed by Operator and Investor Experience</a>
+                                <div>
+                                     <ul class="p-0 m-0 list-style-02 text-left text-black">
                                 <li class="pb-10px"><i class="fa-solid fa-check fs-16 text-white me-10px"></i>Align on
                                     financial structure and terms</li>
                                 <li class="pb-10px"><i class="fa-solid fa-check fs-16 text-white me-10px"></i>Manage
@@ -411,21 +515,23 @@
                                 <li class="pb-10px"><i class="fa-solid fa-check fs-16 text-white me-10px"></i>Prepare
                                     for post-close integration</li>
                             </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                    <div class="rla-services-box-wrapper"></div>
                 </div>
             </div>
-
         </div>
-        <!-- <video autoplay muted loop playsinline webkit-playsinline class="hero-background-video vh-100 position-absolute top-0 start-0"
-                                        style="width:100vw; height:100vh; object-fit:cover; display:block; background:#000;">
-                                        <source src="video/RLAVid3.mp4" type="video/mp4">
-                                        Your browser does not support the video tag.
-                                    </video> -->
-        <img src="images/redLine/finance-casestudy.jpg" alt="Red Lion Advisory"
-            class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover" style="z-index:0;">
-        <div class="bg-after-effect"></div>
+        <div class="bg-lion-gray-1"></div>
+        <!-- Scroll indicator -->
+        <div class="rla-scroll-indicator" id="rlaScrollIndicator">
+            Scroll horizontally →
+        </div>
+    <!-- end section -->
     </section>
+
+
 
     <!-- start footer -->
     <footer class="footer-light bg-very-light-gray">
@@ -475,9 +581,131 @@
     </div>
     <!-- end scroll progress -->
     <!-- javascript libraries -->
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/vendors.min.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/vendors.min.js"></script>
+
+<script src="https://unpkg.com/@studio-freight/lenis@1.0.33/dist/lenis.min.js"></script>
+<script>
+  const lenis = new Lenis({
+    duration: 1.2,
+    easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+    smoothWheel: true
+  })
+
+  function raf(time) {
+    lenis.raf(time)
+    requestAnimationFrame(raf)
+  }
+
+  requestAnimationFrame(raf)
+</script>
+
+<script type="text/javascript" src="js/main.js"></script>
+
+    <script>
+// Fixed header on scroll
+window.addEventListener('scroll', function() {
+    const header = document.querySelector('header');
+    if (window.scrollY > 50) {
+        header.classList.add('sticky');
+    } else {
+        header.classList.remove('sticky');
+    }
+});
+
+  // Horizontal scroll logic
+    const horizontalScrollWrapper = document.querySelector('.rla-horizontal-scroll-wrapper');
+    const horizontalContent = document.querySelector('.rla-horizontal-content');
+    const scrollIndicator = document.getElementById('rlaScrollIndicator');
+
+    let scrollDistance = 0; // dynamic, based on content width
+
+    if (horizontalScrollWrapper && horizontalContent) {
+        function updateScrollDistance() {
+            const viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+            const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
+
+            const contentWidth = horizontalContent.scrollWidth;
+            const extraScroll = Math.max(0, contentWidth - viewportWidth);
+
+            // Total height = viewport height (for initial pin) + extra vertical scroll
+            scrollDistance = viewportHeight + extraScroll;
+            horizontalScrollWrapper.style.height = scrollDistance + 'px';
+        }
+
+        function handleScroll() {
+            const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
+            const rect = horizontalScrollWrapper.getBoundingClientRect();
+
+            const totalScroll = scrollDistance - viewportHeight;
+            if (totalScroll <= 0) {
+                horizontalContent.style.transform = 'translate3d(0,0,0)';
+                if (scrollIndicator) scrollIndicator.classList.remove('rla-active');
+                return;
+            }
+
+            const inSection = rect.top <= 0 && rect.bottom >= viewportHeight;
+
+            if (inSection) {
+                if (scrollIndicator) scrollIndicator.classList.add('rla-active');
+
+                const scrolled = Math.min(Math.max(-rect.top, 0), totalScroll);
+                const progress = scrolled / totalScroll;
+
+                const maxTranslate = horizontalContent.scrollWidth - window.innerWidth;
+                const translateX = -progress * maxTranslate;
+
+                horizontalContent.style.transform = `translate3d(${translateX}px,0,0)`;
+            } else {
+                if (scrollIndicator) scrollIndicator.classList.remove('rla-active');
+
+                // Before entering section: reset to start
+                if (rect.top > 0) {
+                    horizontalContent.style.transform = 'translate3d(0,0,0)';
+                } else {
+                    // After leaving: lock to end
+                    const maxTranslate = horizontalContent.scrollWidth - window.innerWidth;
+                    horizontalContent.style.transform = `translate3d(${-maxTranslate}px,0,0)`;
+                }
+            }
+        }
+
+        // Throttle helper (same behavior as your original)
+        function throttle(func, delay) {
+            let timeoutId;
+            let lastExecTime = 0;
+
+            return function (...args) {
+                const currentTime = Date.now();
+                const timeSinceLastExec = currentTime - lastExecTime;
+
+                clearTimeout(timeoutId);
+
+                if (timeSinceLastExec > delay) {
+                    func.apply(this, args);
+                    lastExecTime = currentTime;
+                } else {
+                    timeoutId = setTimeout(() => {
+                        func.apply(this, args);
+                        lastExecTime = Date.now();
+                    }, delay - timeSinceLastExec);
+                }
+            };
+        }
+
+        const throttledScroll = throttle(handleScroll, 10);
+
+        window.addEventListener('scroll', throttledScroll);
+        window.addEventListener('resize', () => {
+            updateScrollDistance();
+            handleScroll();
+        });
+
+        // Initial setup
+        updateScrollDistance();
+        handleScroll();
+    }
+</script>
 </body>
 
 </html>

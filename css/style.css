@@ -22,8 +22,8 @@ Table of contents
     01. Google font
 ====================================== */
 :root {
-  --alt-font: "SadiSansRegular", sans-serif;
-  --primary-font: "SadiSansRegular", sans-serif;
+  --alt-font: "Google Sans", sans-serif;
+  --primary-font: "DM Sans", sans-serif;
 }
 /* ===================================
     02. CSS color variable
@@ -50,7 +50,7 @@ Table of contents
   --dark-slate-blue: #1f232c;
   --extra-dark-slate-blue: #121418;
   --extra-very-slate-blue: #161620;
-  --tussock-yellow: #BC8947;
+  --tussock-yellow: #0d1a1d;
   --aluminium-grey:#80858F;
   --solitude-blue:#f0f4fd;
   --golden-yellow:#fd961e;
@@ -568,7 +568,7 @@ b, strong {
   color: var(--base-color) !important;
 }
 .text-base-color, .btn-link.text-base-color {
-  color: var(--base-color);
+  color: var(--accent-gold);
 }
 .text-black, .btn-link.text-black, a.text-black-hover:hover {
   color: var(--black);
@@ -592,7 +592,7 @@ b, strong {
   color: var(--very-light-gray);
 }
 .text-red, .btn-link.text-red, a.text-red-hover:hover {
-  color: var(--red);
+  color: var(--accent-gold);
 }
 .text-green, .btn-link.text-green, a.text-green-hover:hover {
   color: var(--green);

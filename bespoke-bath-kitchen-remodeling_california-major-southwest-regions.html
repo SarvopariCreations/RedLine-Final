@@ -2,32 +2,106 @@
 <html class="no-js" lang="en">
 
 <head>
-    <title>Red Lion Advisory - F.A.S.T. (Finance, Analytics, Strategy and
-        Transformation) </title>
+    <title>Red Lion Advisory — F.A.S.T. | Finance • Analytics • Strategy • Transformation</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="author" content="ThemeZaa">
+    <meta name="author" content="Red Lion Advisory">
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <meta name="description" content="Red Lion Advisory - F.A.S.T. (Finance, Analytics, Strategy and
-      Transformation)">
+    <meta name="description"
+        content="Red Lion Advisory (F.A.S.T.) helps private companies, founders, and family offices navigate growth, capital events, and strategic inflection points with financial precision and executional depth.">
+    <meta name="robots" content="index, follow">
+    <!-- Canonical will be set to the current page URL by JS so it works in any environment -->
+    <link rel="canonical" href="">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:site_name" content="Red Lion Advisory">
+    <meta property="og:title" content="Red Lion Advisory — F.A.S.T. | Finance, Analytics, Strategy & Transformation">
+    <meta property="og:description"
+        content="We help private companies, founders, and family offices navigate growth, capital events, and strategic inflection points—with clarity, speed, and executional depth.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="images/redLine/RLA-Logo.png">
+    <meta property="og:locale" content="en_US">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Red Lion Advisory — F.A.S.T.">
+    <meta name="twitter:description"
+        content="Finance, Analytics, Strategy & Transformation for private companies and founders.">
+    <meta name="twitter:image" content="images/redLine/RLA-Logo.png">
+    <!-- JSON-LD structured data (Organization + Website) -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@graph": [
+                {
+                    "@type": "Organization",
+                    "name": "Red Lion Advisory",
+                    "url": "",
+                    "logo": "images/redLine/RLA-Logo.png",
+                    "sameAs": [
+                        "https://www.linkedin.com/company/redlionadvisory/",
+                        "https://x.com/AdvisoryLi92397"
+                    ]
+                },
+                {
+                    "@type": "WebSite",
+                    "name": "Red Lion Advisory",
+                    "url": ""
+                }
+            ]
+        }
+        </script>
     <!-- favicon icon -->
     <link rel="shortcut icon" href="images/redLine/rla-logo-touch-icon.png">
     <link rel="apple-touch-icon" href="images/redLine/rla-logo-touch-icon.png">
-    <link rel="appl e-touch-icon" sizes="72x72" href="images/redLine/rla-logo-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/redLine/rla-logo-touch-icon.png">
     <link rel="apple-touch-icon" sizes="114x114" href="images/redLine/rla-logo-touch-icon.png">
     <!-- google fonts preconnect -->
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- style sheets and font icons -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap"
+        rel="stylesheet">
+
+
     <link rel="stylesheet" href="css/vendors.min.css" />
     <link rel="stylesheet" href="css/icon.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/responsive.css" />
     <link rel="stylesheet" href="css/myfont.css" />
-<link rel="stylesheet" href="css/finance.css" />
+    <link rel="stylesheet" href="css/finance.css" />
+    <link rel="stylesheet" href="css/work/styles.css" />
+    <script>
+        // Set canonical and Open Graph URL dynamically so this file can be served from any host
+        (function () {
+            try {
+                var canonical = document.querySelector('link[rel="canonical"]');
+                var ogUrl = document.querySelector('meta[property="og:url"]');
+                var orgJson = document.querySelector('script[type="application/ld+json"]');
+                var loc = window.location.href.split('?')[0].split('#')[0];
+                if (canonical) canonical.href = loc;
+                if (ogUrl) ogUrl.content = loc;
+                if (orgJson) {
+                    try {
+                        var data = JSON.parse(orgJson.textContent);
+                        if (Array.isArray(data['@graph'])) {
+                            data['@graph'].forEach(function (node) { if (node.url === "") node.url = loc; });
+                            orgJson.textContent = JSON.stringify(data);
+                        }
+                    } catch (e) { /* ignore JSON errors */ }
+                }
+            } catch (e) { }
+        })();
+    </script>
 </head>
 
-<body data-mobile-nav-style="full-screen-menu" data-mobile-nav-bg-color="#bc8947" class="custom-cursor">
+<body data-mobile-nav-style="full-screen-menu" data-mobile-nav-bg-color="#0d1a1d" class="custom-cursor case-study-container">
+    <!-- Primary page heading (visually hidden for layout): improves SEO and accessibility -->
+    <h1 style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;">Red Lion Advisory —
+        Finance, Analytics, Strategy & Transformation</h1>
     <!-- start cursor -->
     <div class="cursor-page-inner">
         <div class="circle-cursor circle-cursor-inner"></div>
@@ -37,19 +111,19 @@
     <!-- start header -->
     <header>
         <!-- start navigation -->
-        <nav class="navbar navbar-expand-lg bg-transparent disable-fixed">
+        <nav class="navbar navbar-expand-lg bg-transparent">
             <div class="container-fluid">
                 <div class="col-auto col-lg-2 me-lg-0 me-auto">
-                    <a class="navbar-brand" href="javascript:void(0)">
+                    <a class="navbar-brand" href="/">
                         <img src="images/redLine/LionRedLionLogoW.png" data-at2x="images/redLine/LionRedLionLogoW.png"
-                            alt="" class="default-logo">
+                            alt="Red Lion Advisory logo" class="default-logo">
                         <img src="images/redLine/LionRedLionLogoW.png" data-at2x="images/redLine/LionRedLionLogoW.png"
-                            alt="" class="alt-logo">
-                        <img src="images/redLine/RLA-Logo.png" data-at2x="images/redLine/RLA-Logo.png" alt=""
-                            class="mobile-logo">
+                            alt="Red Lion Advisory logo" class="alt-logo">
+                        <img src="images/redLine/RLA-Logo.png" data-at2x="images/redLine/RLA-Logo.png"
+                            alt="Red Lion Advisory mark" class="mobile-logo">
                     </a>
                 </div>
-                <div class="col-auto col-lg-8 menu-order position-static">
+                <div class="col-auto col-lg-8 menu-order position-static align-items-center d-flex">
                     <button class="navbar-toggler float-start" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarNav" aria-expanded="false" aria-controls="navbarNav"
                         aria-label="Toggle navigation">
@@ -128,7 +202,6 @@
         </nav>
         <!-- end navigation -->
     </header>
-    <!-- end header -->
     <!-- start section -->
     <section class="cover-background one-half-screen bg-dark-gray ipad-top-space-margin d-flex align-items-center"
         style="background-image: url('images/redLine/casestudy-4.jpg')">
@@ -205,14 +278,14 @@
     </section>
     <!-- end section -->
     <!-- start section -->
-    <section class="bg-light-medium-gray">
+    <section class="wheat-bg">
         <div class="container">
             <div class="row justify-content-center mb-1">
                 <div class="col-lg-7 text-center"
                     data-anime='{ "el": "childs", "translateY": [50, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 100, "easing": "easeOutQuad" }'>
                     <span class="fs-17 d-inline-block fw-500 text-uppercase text-base-color ls-1px">You may also
                         like</span>
-                    <h1 class="alt-font text-dark-gray fw-600 ls-minus-1px ft-md-32">Related posts</h1>
+                    <h1 class="alt-font text-white fw-600 ls-minus-1px ft-md-32">Related posts</h1>
                 </div>
             </div>
             <div class="row">
@@ -222,12 +295,12 @@
                         <li class="grid-sizer"></li>
                         <!-- start blog item -->
                         <li class="grid-item">
-                            <div class="card bg-transparent border-0 h-100">
+                            <div class="card border-0 h-100">
                                 <div class="blog-image position-relative overflow-hidden">
                                     <a href="medical-device-comapny-casestudy.html"><img
                                             src="images/redLine/casestudy-1.jpg" alt="" /></a>
                                 </div>
-                                <div class="card-body px-0 pt-30px pb-30px xs-pb-0">                                   
+                                <div class="card-body pt-30px pb-30px xs-pb-0">                                   
                                     <a href="medical-device-comapny-casestudy.html"
                                         class="card-title mb-20px alt-font fs-22 fw-500 text-dark-gray d-inline-block w-90 h-60px">Medical
                                         Device Company</a>
@@ -241,12 +314,12 @@
                         <!-- end blog item -->
                         <!-- start blog item -->
                         <li class="grid-item">
-                            <div class="card bg-transparent border-0 h-100">
+                            <div class="card border-0 h-100">
                                 <div class="blog-image position-relative overflow-hidden">
                                     <a href="specialty-goods-retail-south-southeast-southwest-regions.html"><img
                                             src="images/redLine/casestudy-3.jpg" alt="" /></a>
                                 </div>
-                                <div class="card-body px-0 pt-30px pb-30px xs-pb-0">
+                                <div class="card-body pt-30px pb-30px xs-pb-0">
                                     <a href="specialty-goods-retail-south-southeast-southwest-regions.html"
                                         class="card-title mb-20px alt-font fs-22 fw-500 text-dark-gray d-inline-block w-90 h-60px">Specialty
                                         Goods Retail - South, SouthEast, and SouthWest Regions</a>
@@ -293,7 +366,7 @@
                                             <li><a href="contact.html">Contact us</a></li>
                                         </ul>
                 </div>
-                                <div class="col-sm-12 md-mt-15px mt-35px text-center last-paragraph-no-margin social-platform">
+                <div class="col-sm-12 md-mt-15px mt-35px text-center last-paragraph-no-margin social-platform">
                     <a href="https://www.linkedin.com/company/redlionadvisory/" target="_blank"><img src="images/redLine/linkedin.svg" alt="LinkedIn"></a>
                     <a href="https://x.com/AdvisoryLi92397" target="_blank"><img src="images/redLine/twitter.svg" alt="Twitter"></a>
                 </div>
@@ -317,6 +390,128 @@
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/vendors.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
+
+
+<script src="https://unpkg.com/@studio-freight/lenis@1.0.33/dist/lenis.min.js"></script>
+<script>
+  const lenis = new Lenis({
+    duration: 1.2,
+    easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+    smoothWheel: true
+  })
+
+  function raf(time) {
+    lenis.raf(time)
+    requestAnimationFrame(raf)
+  }
+
+  requestAnimationFrame(raf)
+</script>
+
+<script>
+// Fixed header on scroll
+window.addEventListener('scroll', function() {
+    const header = document.querySelector('header');
+    if (window.scrollY > 50) {
+        header.classList.add('sticky');
+    } else {
+        header.classList.remove('sticky');
+    }
+});
+
+  // Horizontal scroll logic
+    const horizontalScrollWrapper = document.querySelector('.rla-horizontal-scroll-wrapper');
+    const horizontalContent = document.querySelector('.rla-horizontal-content');
+    const scrollIndicator = document.getElementById('rlaScrollIndicator');
+
+    let scrollDistance = 0; // dynamic, based on content width
+
+    if (horizontalScrollWrapper && horizontalContent) {
+        function updateScrollDistance() {
+            const viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+            const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
+
+            const contentWidth = horizontalContent.scrollWidth;
+            const extraScroll = Math.max(0, contentWidth - viewportWidth);
+
+            // Total height = viewport height (for initial pin) + extra vertical scroll
+            scrollDistance = viewportHeight + extraScroll;
+            horizontalScrollWrapper.style.height = scrollDistance + 'px';
+        }
+
+        function handleScroll() {
+            const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
+            const rect = horizontalScrollWrapper.getBoundingClientRect();
+
+            const totalScroll = scrollDistance - viewportHeight;
+            if (totalScroll <= 0) {
+                horizontalContent.style.transform = 'translate3d(0,0,0)';
+                if (scrollIndicator) scrollIndicator.classList.remove('rla-active');
+                return;
+            }
+
+            const inSection = rect.top <= 0 && rect.bottom >= viewportHeight;
+
+            if (inSection) {
+                if (scrollIndicator) scrollIndicator.classList.add('rla-active');
+
+                const scrolled = Math.min(Math.max(-rect.top, 0), totalScroll);
+                const progress = scrolled / totalScroll;
+
+                const maxTranslate = horizontalContent.scrollWidth - window.innerWidth;
+                const translateX = -progress * maxTranslate;
+
+                horizontalContent.style.transform = `translate3d(${translateX}px,0,0)`;
+            } else {
+                if (scrollIndicator) scrollIndicator.classList.remove('rla-active');
+
+                // Before entering section: reset to start
+                if (rect.top > 0) {
+                    horizontalContent.style.transform = 'translate3d(0,0,0)';
+                } else {
+                    // After leaving: lock to end
+                    const maxTranslate = horizontalContent.scrollWidth - window.innerWidth;
+                    horizontalContent.style.transform = `translate3d(${-maxTranslate}px,0,0)`;
+                }
+            }
+        }
+
+        // Throttle helper (same behavior as your original)
+        function throttle(func, delay) {
+            let timeoutId;
+            let lastExecTime = 0;
+
+            return function (...args) {
+                const currentTime = Date.now();
+                const timeSinceLastExec = currentTime - lastExecTime;
+
+                clearTimeout(timeoutId);
+
+                if (timeSinceLastExec > delay) {
+                    func.apply(this, args);
+                    lastExecTime = currentTime;
+                } else {
+                    timeoutId = setTimeout(() => {
+                        func.apply(this, args);
+                        lastExecTime = Date.now();
+                    }, delay - timeSinceLastExec);
+                }
+            };
+        }
+
+        const throttledScroll = throttle(handleScroll, 10);
+
+        window.addEventListener('scroll', throttledScroll);
+        window.addEventListener('resize', () => {
+            updateScrollDistance();
+            handleScroll();
+        });
+
+        // Initial setup
+        updateScrollDistance();
+        handleScroll();
+    }
+    </script>
 </body>
 
 </html>

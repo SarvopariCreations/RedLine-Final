@@ -2,53 +2,126 @@
 <html class="no-js" lang="en">
 
 <head>
-    <title>Red Lion Advisory - F.A.S.T. (Finance, Analytics, Strategy and
-        Transformation) </title>
+    <title>Red Lion Advisory — F.A.S.T. | Finance • Analytics • Strategy • Transformation</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="author" content="ThemeZaa">
+    <meta name="author" content="Red Lion Advisory">
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <meta name="description" content="Red Lion Advisory - F.A.S.T. (Finance, Analytics, Strategy and
-      Transformation)">
+    <meta name="description"
+        content="Red Lion Advisory (F.A.S.T.) helps private companies, founders, and family offices navigate growth, capital events, and strategic inflection points with financial precision and executional depth.">
+    <meta name="robots" content="index, follow">
+    <!-- Canonical will be set to the current page URL by JS so it works in any environment -->
+    <link rel="canonical" href="">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:site_name" content="Red Lion Advisory">
+    <meta property="og:title" content="Red Lion Advisory — F.A.S.T. | Finance, Analytics, Strategy & Transformation">
+    <meta property="og:description"
+        content="We help private companies, founders, and family offices navigate growth, capital events, and strategic inflection points—with clarity, speed, and executional depth.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="images/redLine/RLA-Logo.png">
+    <meta property="og:locale" content="en_US">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Red Lion Advisory — F.A.S.T.">
+    <meta name="twitter:description"
+        content="Finance, Analytics, Strategy & Transformation for private companies and founders.">
+    <meta name="twitter:image" content="images/redLine/RLA-Logo.png">
+    <!-- JSON-LD structured data (Organization + Website) -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@graph": [
+                {
+                    "@type": "Organization",
+                    "name": "Red Lion Advisory",
+                    "url": "",
+                    "logo": "images/redLine/RLA-Logo.png",
+                    "sameAs": [
+                        "https://www.linkedin.com/company/redlionadvisory/",
+                        "https://x.com/AdvisoryLi92397"
+                    ]
+                },
+                {
+                    "@type": "WebSite",
+                    "name": "Red Lion Advisory",
+                    "url": ""
+                }
+            ]
+        }
+        </script>
     <!-- favicon icon -->
     <link rel="shortcut icon" href="images/redLine/rla-logo-touch-icon.png">
     <link rel="apple-touch-icon" href="images/redLine/rla-logo-touch-icon.png">
-    <link rel="appl e-touch-icon" sizes="72x72" href="images/redLine/rla-logo-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/redLine/rla-logo-touch-icon.png">
     <link rel="apple-touch-icon" sizes="114x114" href="images/redLine/rla-logo-touch-icon.png">
     <!-- google fonts preconnect -->
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- style sheets and font icons -->
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
+
+
     <link rel="stylesheet" href="css/vendors.min.css" />
     <link rel="stylesheet" href="css/icon.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/responsive.css" />
     <link rel="stylesheet" href="css/myfont.css" />
-<link rel="stylesheet" href="css/finance.css" />
+    <link rel="stylesheet" href="css/finance.css" />
+    <link rel="stylesheet" href="css/work/styles.css" />
+    <script>
+        // Set canonical and Open Graph URL dynamically so this file can be served from any host
+        (function () {
+            try {
+                var canonical = document.querySelector('link[rel="canonical"]');
+                var ogUrl = document.querySelector('meta[property="og:url"]');
+                var orgJson = document.querySelector('script[type="application/ld+json"]');
+                var loc = window.location.href.split('?')[0].split('#')[0];
+                if (canonical) canonical.href = loc;
+                if (ogUrl) ogUrl.content = loc;
+                if (orgJson) {
+                    try {
+                        var data = JSON.parse(orgJson.textContent);
+                        if (Array.isArray(data['@graph'])) {
+                            data['@graph'].forEach(function (node) { if (node.url === "") node.url = loc; });
+                            orgJson.textContent = JSON.stringify(data);
+                        }
+                    } catch (e) { /* ignore JSON errors */ }
+                }
+            } catch (e) { }
+        })();
+    </script>
 </head>
 
-<body data-mobile-nav-style="full-screen-menu" data-mobile-nav-bg-color="#bc8947" class="custom-cursor">
+<body data-mobile-nav-style="full-screen-menu" data-mobile-nav-bg-color="#0d1a1d" class="custom-cursor">
+    <!-- Primary page heading (visually hidden for layout): improves SEO and accessibility -->
+    <h1 style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;">Red Lion Advisory —
+        Finance, Analytics, Strategy & Transformation</h1>
     <!-- start cursor -->
     <div class="cursor-page-inner">
         <div class="circle-cursor circle-cursor-inner"></div>
         <div class="circle-cursor circle-cursor-outer"></div>
     </div>
     <!-- end cursor -->
+    <!-- start header -->
     <header>
         <!-- start navigation -->
-        <nav class="navbar navbar-expand-lg bg-transparent disable-fixed">
+        <nav class="navbar navbar-expand-lg bg-transparent">
             <div class="container-fluid">
                 <div class="col-auto col-lg-2 me-lg-0 me-auto">
-                    <a class="navbar-brand" href="javascript:void(0)">
+                    <a class="navbar-brand" href="/">
                         <img src="images/redLine/LionRedLionLogoW.png" data-at2x="images/redLine/LionRedLionLogoW.png"
-                            alt="" class="default-logo">
+                            alt="Red Lion Advisory logo" class="default-logo">
                         <img src="images/redLine/LionRedLionLogoW.png" data-at2x="images/redLine/LionRedLionLogoW.png"
-                            alt="" class="alt-logo">
-                        <img src="images/redLine/RLA-Logo.png" data-at2x="images/redLine/RLA-Logo.png" alt=""
-                            class="mobile-logo">
+                            alt="Red Lion Advisory logo" class="alt-logo">
+                        <img src="images/redLine/RLA-Logo.png" data-at2x="images/redLine/RLA-Logo.png"
+                            alt="Red Lion Advisory mark" class="mobile-logo">
                     </a>
                 </div>
-                <div class="col-auto col-lg-8 menu-order position-static">
+                <div class="col-auto col-lg-8 menu-order position-static align-items-center d-flex">
                     <button class="navbar-toggler float-start" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarNav" aria-expanded="false" aria-controls="navbarNav"
                         aria-label="Toggle navigation">
@@ -173,12 +246,12 @@
                         <li class="grid-sizer"></li>
                         <!-- start blog item -->
                         <li class="grid-item">
-                            <div class="card bg-transparent border-0 h-100">
+                            <div class="card border-0 h-100">
                                 <div class="blog-image position-relative overflow-hidden">
                                     <a href="medical-device-comapny-casestudy.html"><img
                                             src="images/redLine/casestudy-1.jpg" alt="" /></a>
                                 </div>
-                                <div class="card-body px-0 pt-30px pb-30px xs-pb-0">
+                                <div class="card-body pt-30px pb-30px xs-pb-0">
                                     <a href="medical-device-comapny-casestudy.html"
                                         class="card-title mb-20px alt-font fs-22 fw-500 text-dark-gray d-inline-block w-90 h-60px">Medical
                                         Device Company</a>
@@ -192,12 +265,12 @@
                         <!-- end blog item -->
                         <!-- start blog item -->
                         <li class="grid-item">
-                            <div class="card bg-transparent border-0 h-100">
+                            <div class="card border-0 h-100">
                                 <div class="blog-image position-relative overflow-hidden">
                                     <a href="specialty-goods-retail-south-southeast-southwest-regions.html"><img
                                             src="images/redLine/casestudy-3.jpg" alt="" /></a>
                                 </div>
-                                <div class="card-body px-0 pt-30px pb-30px xs-pb-0">                                   
+                                <div class="card-body pt-30px pb-30px xs-pb-0">                                   
                                     <a href="specialty-goods-retail-south-southeast-southwest-regions.html"
                                         class="card-title mb-20px alt-font fs-22 fw-500 text-dark-gray d-inline-block w-90 h-60px">Specialty
                                         Goods Retail - South, SouthEast, and SouthWest Regions</a>
@@ -211,12 +284,12 @@
                         <!-- end blog item -->
                         <!-- start blog item -->
                         <li class="grid-item">
-                            <div class="card bg-transparent border-0 h-100">
+                            <div class="card border-0 h-100">
                                 <div class="blog-image position-relative overflow-hidden">
                                     <a href="energy-storage-company-southwest-us.html"><img
                                             src="images/redLine/casestudy-2.jpg" alt="" /></a>
                                 </div>
-                                <div class="card-body px-0 pt-30px pb-30px xs-pb-0">
+                                <div class="card-body pt-30px pb-30px xs-pb-0">
                                     <a href="energy-storage-company-southwest-us.html"
                                         class="card-title mb-20px alt-font fs-22 fw-500 text-dark-gray d-inline-block w-90">
                                         Energy Storage Company - SouthWest US
@@ -231,12 +304,12 @@
                         <!-- end blog item -->
                         <!-- start blog item -->
                         <li class="grid-item">
-                            <div class="card bg-transparent border-0 h-100">
+                            <div class="card border-0 h-100">
                                 <div class="blog-image position-relative overflow-hidden">
                                     <a href="health-diagnostics-company-northeast-us.html"><img
                                             src="images/redLine/casestudy-5.jpg" alt="" /></a>
                                 </div>
-                                <div class="card-body px-0 pt-30px pb-30px xs-pb-0">
+                                <div class="card-body pt-30px pb-30px xs-pb-0">
                                     <a href="health-diagnostics-company-northeast-us.html"
                                         class="card-title mb-20px alt-font fs-22 fw-500 text-dark-gray d-inline-block w-90">
                                         Health Diagnostics Company - NorthEast US

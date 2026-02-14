@@ -2,14 +2,54 @@
 <html class="no-js" lang="en">
 
 <head>
-    <title>Red Lion Advisory - F.A.S.T. (Finance, Analytics, Strategy and
-        Transformation) </title>
+    <title>Red Lion Advisory — F.A.S.T. | Finance • Analytics • Strategy • Transformation</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="author" content="ThemeZaa">
+    <meta name="author" content="Red Lion Advisory">
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <meta name="description" content="Red Lion Advisory - F.A.S.T. (Finance, Analytics, Strategy and
-      Transformation)">
+    <meta name="description"
+        content="Red Lion Advisory (F.A.S.T.) helps private companies, founders, and family offices navigate growth, capital events, and strategic inflection points with financial precision and executional depth.">
+    <meta name="robots" content="index, follow">
+    <!-- Canonical will be set to the current page URL by JS so it works in any environment -->
+    <link rel="canonical" href="">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:site_name" content="Red Lion Advisory">
+    <meta property="og:title" content="Red Lion Advisory — F.A.S.T. | Finance, Analytics, Strategy & Transformation">
+    <meta property="og:description"
+        content="We help private companies, founders, and family offices navigate growth, capital events, and strategic inflection points—with clarity, speed, and executional depth.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="images/redLine/RLA-Logo.png">
+    <meta property="og:locale" content="en_US">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Red Lion Advisory — F.A.S.T.">
+    <meta name="twitter:description"
+        content="Finance, Analytics, Strategy & Transformation for private companies and founders.">
+    <meta name="twitter:image" content="images/redLine/RLA-Logo.png">
+    <!-- JSON-LD structured data (Organization + Website) -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@graph": [
+                {
+                    "@type": "Organization",
+                    "name": "Red Lion Advisory",
+                    "url": "",
+                    "logo": "images/redLine/RLA-Logo.png",
+                    "sameAs": [
+                        "https://www.linkedin.com/company/redlionadvisory/",
+                        "https://x.com/AdvisoryLi92397"
+                    ]
+                },
+                {
+                    "@type": "WebSite",
+                    "name": "Red Lion Advisory",
+                    "url": ""
+                }
+            ]
+        }
+        </script>
     <!-- favicon icon -->
     <link rel="shortcut icon" href="images/redLine/rla-logo-touch-icon.png">
     <link rel="apple-touch-icon" href="images/redLine/rla-logo-touch-icon.png">
@@ -19,36 +59,71 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- style sheets and font icons -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap"
+        rel="stylesheet">
+
+
     <link rel="stylesheet" href="css/vendors.min.css" />
     <link rel="stylesheet" href="css/icon.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/responsive.css" />
     <link rel="stylesheet" href="css/myfont.css" />
-<link rel="stylesheet" href="css/finance.css" />
+    <link rel="stylesheet" href="css/finance.css" />
+    <link rel="stylesheet" href="css/work/styles.css" />
+    <script>
+        // Set canonical and Open Graph URL dynamically so this file can be served from any host
+        (function () {
+            try {
+                var canonical = document.querySelector('link[rel="canonical"]');
+                var ogUrl = document.querySelector('meta[property="og:url"]');
+                var orgJson = document.querySelector('script[type="application/ld+json"]');
+                var loc = window.location.href.split('?')[0].split('#')[0];
+                if (canonical) canonical.href = loc;
+                if (ogUrl) ogUrl.content = loc;
+                if (orgJson) {
+                    try {
+                        var data = JSON.parse(orgJson.textContent);
+                        if (Array.isArray(data['@graph'])) {
+                            data['@graph'].forEach(function (node) { if (node.url === "") node.url = loc; });
+                            orgJson.textContent = JSON.stringify(data);
+                        }
+                    } catch (e) { /* ignore JSON errors */ }
+                }
+            } catch (e) { }
+        })();
+    </script>
 </head>
 
-<body data-mobile-nav-style="full-screen-menu" data-mobile-nav-bg-color="#bc8947" class="custom-cursor">
+<body data-mobile-nav-style="full-screen-menu" data-mobile-nav-bg-color="#0d1a1d" class="custom-cursor">
+    <!-- Primary page heading (visually hidden for layout): improves SEO and accessibility -->
+    <h1 style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;">Red Lion Advisory —
+        Finance, Analytics, Strategy & Transformation</h1>
     <!-- start cursor -->
     <div class="cursor-page-inner">
         <div class="circle-cursor circle-cursor-inner"></div>
         <div class="circle-cursor circle-cursor-outer"></div>
     </div>
     <!-- end cursor -->
+    <!-- start header -->
     <header>
         <!-- start navigation -->
-        <nav class="navbar navbar-expand-lg bg-transparent disable-fixed">
+        <nav class="navbar navbar-expand-lg bg-transparent">
             <div class="container-fluid">
                 <div class="col-auto col-lg-2 me-lg-0 me-auto">
                     <a class="navbar-brand" href="/">
                         <img src="images/redLine/LionRedLionLogoW.png" data-at2x="images/redLine/LionRedLionLogoW.png"
-                            alt="" class="default-logo">
+                            alt="Red Lion Advisory logo" class="default-logo">
                         <img src="images/redLine/LionRedLionLogoW.png" data-at2x="images/redLine/LionRedLionLogoW.png"
-                            alt="" class="alt-logo">
-                        <img src="images/redLine/RLA-Logo.png" data-at2x="images/redLine/RLA-Logo.png" alt=""
-                            class="mobile-logo">
+                            alt="Red Lion Advisory logo" class="alt-logo">
+                        <img src="images/redLine/RLA-Logo.png" data-at2x="images/redLine/RLA-Logo.png"
+                            alt="Red Lion Advisory mark" class="mobile-logo">
                     </a>
                 </div>
-                <div class="col-auto col-lg-8 menu-order position-static">
+                <div class="col-auto col-lg-8 menu-order position-static align-items-center d-flex">
                     <button class="navbar-toggler float-start" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarNav" aria-expanded="false" aria-controls="navbarNav"
                         aria-label="Toggle navigation">
@@ -133,7 +208,8 @@
         <div class="opacity-extra-medium bg-gradient-dark-black-brown"></div>
         <!-- Video background (replaces static background image) -->
         <div class="position-absolute left-0 top-0 w-100 h-100" style="overflow:hidden; z-index:0;">
-            <video autoplay muted loop playsinline webkit-playsinline class="w-100 h-100 object-fit-cover" style="width:100%; height:100%; object-fit:cover;">
+            <video autoplay muted loop playsinline webkit-playsinline class="w-100 h-100 object-fit-cover"
+                style="width:100%; height:100%; object-fit:cover;">
                 <source src="video/video-4.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
@@ -163,14 +239,39 @@
         </div>
     </section>
 
-    <section>
+    <!-- <section class="container-fluid p-3 position-relative overflow-hidden brutalist-about-section">
+            <div class="grid-overlay"></div>
+            <div class="cursor-dot"></div>            
+            <div class="container-fluid">                
+                <div class="header">
+                    <div class="header-left">
+                        <h1 class="large-title">
+                            EXECUTION
+                            <span class="highlight">DRIVEN</span>
+                            ADVISORY
+                        </h1>
+                    </div>
+                    <div class="header-right">
+                        <p class="description-text">
+                            We provide cross-functional guidance across capital allocation, diligence, operations, and
+                            growth—tailored to each client's unique objectives and challenges. At <strong>Red Lion
+                                Advisory</strong>, we provide flexible, high-impact advisory across the lifecycle of capital,
+                            growth, and transition. Whether advising a founder, operator, investor, or sponsor, we bring real-world
+                            execution experience and institutional-grade insight to drive meaningful outcomes.
+                        </p>
+                    </div>
+                </div>
+            </div>
+    </section> -->
+
+    <section class="wheat-bg">
         <div class="container">
             <!-- start row -->
-            <div class="row align-items-center">
+            <!-- <div class="row align-items-center">
                 <div class="col-xl-12"
                     data-anime='{ "el": "childs", "translateX": [50, 0], "opacity": [0,1], "duration": 800, "delay": 0, "staggervalue": 200, "easing": "easeOutQuad" }'>
                     <div class="d-flex align-items-center justify-content-center flex-column mb-2">
-                        <h2 class="alt-font fw-600 ls-minus-2px text-dark-gray text-center ft-md-32">Execution-Driven Advisory Services</h2>
+                        <h2 class="alt-font fw-600 text-dark-gray text-center ft-md-32"></h2>
                         <p class="text-center w-100 w-md-75">We provide cross-functional guidance across capital allocation,
                             diligence, operations, and growth—tailored to each client’s unique objectives and
                             challenges.
@@ -180,66 +281,70 @@
                             experience and institutional-grade insight to drive meaningful outcomes.</p>
                     </div>
                 </div>
+            </div> -->
+
+            <div class="rla-header-section">
+                <div class="rla-container">
+                    <div class="rla-text-center rla-mb-2">
+                        <h2 class="rla-fw-600 text-white">Execution-Driven Advisory Services</h2>
+                        <p style="max-width: 100%; margin: 0 auto; color: #828282;">
+                            We provide cross-functional guidance across capital allocation,
+                            diligence, operations, and growth—tailored to each client’s unique objectives and
+                            challenges.
+                            At Red Lion Advisory, we provide flexible, high-impact advisory across the lifecycle of
+                            capital, growth, and transition.
+                            Whether advising a founder, operator, investor, or sponsor, we bring real-world execution
+                            experience and institutional-grade insight to drive meaningful outcomes.
+                        </p>
+                    </div>
+                </div>
             </div>
+
         </div>
         <div class="container">
             <div class="row align-items-center justify-content-center">
-                <div class="dark-blue-bg p-7 sm-p-35px mb-40px border-radius-6px">
-                    <h5 class="text-white fw-700 ls-minus-1px alt-font mb-30px d-block text-center">We Partner & Advise Clients
-                        With:</h5>
-                    <div class="row row-cols-1 row-cols-xl-2 row-cols-md-2">
+                <div class="wheat-bg sm-p-35px mb-40px border-radius-6px">
+                    <h6 class="text-white fw-500 alt-font mb-0 d-block text-center">We Partner & Advise Clients
+                        With:</h6>
+                    <div class="row  align-items-center">
                         <div class="col">
-                            <ul class="p-0 m-0 list-style-02 text-white">
-                                <li class="pb-10px"><i class="fa-solid fa-check fs-16 text-white me-10px"></i>Deal
+                            <ul
+                                class="fs-22 lh-30 text-white mb-15px ps-0 ms-0 tags-layout mt-3 align-items-center justify-content-center">
+                                <li class="pb-10px">Deal
                                     Screening & Diligence</li>
-                                <li class="pb-10px"><i
-                                        class="fa-solid fa-check fs-16 text-white me-10px"></i>Financial Modeling
+                                <li class="pb-10px">Financial Modeling
                                     & Valuation</li>
-                                <li class="pb-10px"><i
-                                        class="fa-solid fa-check fs-16 text-white me-10px"></i>Capital Structure &
+                                <li class="pb-10px">Capital Structure &
                                     Transactions</li>
-                                <li class="pb-10px"><i class="fa-solid fa-check fs-16 text-white me-10px"></i>M&A
+                                <li class="pb-10px">M&A
                                     Strategy & Execution</li>
-                                <li class="pb-10px"><i
-                                        class="fa-solid fa-check fs-16 text-white me-10px"></i>Post-Close Advisory
+                                <li class="pb-10px">Post-Close Advisory
                                     & Ops Transition</li>
-                                <li class="pb-10px"><i
-                                        class="fa-solid fa-check fs-16 text-white me-10px"></i>Portfolio & Board
+                                <li class="pb-10px">Portfolio & Board
                                     Reporting</li>
-                                <li class="pb-10px"><i
-                                        class="fa-solid fa-check fs-16 text-white me-10px"></i>Turnaround /
+                                <li class="pb-10px">Turnaround /
                                     Special Situation & Interim Leadership</li>
-                                <li class="pb-10px"><i
-                                        class="fa-solid fa-check fs-16 text-white me-10px"></i>Growth &
+                                <li class="pb-10px">Growth &
                                     Transformation Strategy</li>
-                            </ul>
-                        </div>
-                        <div class="col">
-                            <ul class="p-0 m-0 list-style-02 text-white">
-                                <li class="pb-10px"><i
-                                        class="fa-solid fa-check fs-16 text-white me-10px"></i>Fundraising &
+                                <li class="pb-10px">Fundraising &
                                     Investor Preparation
                                 </li>
-                                <li class="pb-10px"><i
-                                        class="fa-solid fa-check fs-16 text-white me-10px"></i>Process & KPI
+                                <li class="pb-10px">Process & KPI
                                     Optimization</li>
-                                <li class="pb-10px"><i class="fa-solid fa-check fs-16 text-white me-10px"></i>Tech
+                                <li class="pb-10px">Tech
                                     & Data Infrastructure</li>
-                                <li class="pb-10px"><i
-                                        class="fa-solid fa-check fs-16 text-white me-10px"></i>Capital Planning &
+                                <li class="pb-10px">Capital Planning &
                                     Value Creation
                                 </li>
-                                <li class="pb-10px"><i
-                                        class="fa-solid fa-check fs-16 text-white me-10px"></i>Market &
+                                <li class="pb-10px">Market &
                                     Competitive Analysis</li>
-                                <li class="pb-10px"><i
-                                        class="fa-solid fa-check fs-16 text-white me-10px"></i>Budgeting & Cash
+                                <li class="pb-10px">Budgeting & Cash
                                     Flow Forecasting
                                 </li>
-                                <li class="pb-10px"><i class="fa-solid fa-check fs-16 text-white me-10px"></i>Debt
+                                <li class="pb-10px">Debt
                                     Refinancing & Lender Negotiation
                                 </li>
-                                <li class="pb-10px"><i class="fa-solid fa-check fs-16 text-white me-10px"></i>Exit
+                                <li class="pb-10px">Exit
                                     Readiness & Transaction
                                     Preparation</li>
                             </ul>
@@ -249,76 +354,109 @@
             </div>
         </div>
     </section>
-    <section class="bg-very-light-gray overflow-hidden position-relative">
-        <div class="container z-index-2 position-relative">
-            <div class="row justify-content-center mb-2">
-                <div class="col-lg-12 text-center text-white"
-                    data-anime='{ "el": "childs", "translateY": [50, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 200, "easing": "easeOutQuad" }'>
-                    <h2 class="alt-font text-white fw-600 ls-minus-1px ft-md-32">Family Office Advisory</h2>
-                    <p class="w-100 w-md-75 mx-auto">Red Lion Advisory serves as a high-impact partner to
-                        family offices, delivering institutional-grade diligence,
-                        strategic insight, and hands-on leadership across the
-                        private investment landscape.</p>
-                    <p>Family offices are constantly navigating a flood of inbound
-                        opportunities—often with unclear risk, uneven quality, and limited
-                        transparency. RLA acts as a trusted, independent partner,
-                        rigorously evaluating deals, challenging assumptions, and
-                        uncovering what others miss. Beyond diligence, we offer retained
-                        advisory to help manage portfolio complexity, rebalance capital,
-                        and guide companies through key transitions. Whether you need
-                        investment insight or embedded leadership, we operate as a
-                        strategic extension of your team.</p>
-                </div>
-            </div>
-            <div class="col-12 row position-relative mx-auto md:mx-init-0 gap-3 gap-md-0">
-                <div class="col-md-4">
-                    <div class="services-box border border-color-white p-5 xxl-p-6 box-shadow-extra-large h-100">
-                    <div class="services-box-icon">
-                        <i class="line-icon-Data-Shield icon-extra-large text-white mb-25px"></i>
-                    </div>
-                    <div class="services-box-content">
-                        <h6 class="text-white">Retained Strategic & Portfolio Advisory</h6>
-                        <p class="text-white mb-0">Ongoing access to our team for deal screening, portfolio monitoring, capital allocation
-                            decisions, and fractional
-                            C-suite leadership.</p>
-                    </div>
+
+    <!-- Horizontal scroll section -->
+    <section class="rla-horizontal-scroll-wrapper">
+        <div class="rla-sticky-container">
+            <div class="rla-bg-very-light-gray">
+
+                <!-- Fixed Header Section -->
+                <div class="rla-header-section">
+                    <div class="rla-container">
+                        <div class="rla-text-center rla-mb-2">
+                            <h2 class="rla-fw-600 rla-ls-minus-1px">Family Office Advisory</h2>
+                            <p style="max-width: 100%; margin: 0 auto;">
+                                Red Lion Advisory serves as a high-impact partner to family offices, delivering
+                                institutional-grade diligence,
+                                strategic insight, and hands-on leadership across the private investment landscape.
+                            </p>
+                            <p style="max-width: 100%; margin: 0 auto;">
+                                Family offices are constantly navigating a flood of inbound opportunities—often with
+                                unclear risk, uneven quality, and limited transparency.
+                                RLA acts as a trusted, independent partner, rigorously evaluating deals, challenging
+                                assumptions, and uncovering what others miss.
+                                Beyond diligence, we offer retained advisory to help manage portfolio complexity,
+                                rebalance capital, and guide companies through key transitions.
+                                Whether you need investment insight or embedded leadership, we operate as a strategic
+                                extension of your team.
+                            </p>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="services-box border border-color-white p-5 xxl-p-6 box-shadow-extra-large h-100">
-                    <div class="services-box-icon">
-                        <i class="line-icon-Dollar-Sign icon-extra-large text-white mb-25px"></i>
+
+                <!-- Horizontal Scrolling Boxes -->
+                <div class="rla-horizontal-content">
+
+                    <!-- Box 1 -->
+                    <div class="rla-services-box-wrapper">
+                        <div class="rla-services-box h-auto">
+                            <div class="rla-services-box-icon">
+                                <i class="line-icon-Data-Shield icon-extra-large text-white"></i>
+                            </div>
+                            <div class="rla-services-box-content">
+                                <a href="#">Retained Strategic & Portfolio Advisory</a>
+                                <p>
+                                    Ongoing access to our team for deal screening, portfolio monitoring, capital
+                                    allocation
+                                    decisions, and fractional C-suite leadership.
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="services-box-content">
-                        <h6 class="text-white">Independent Diligence & Valuation</h6>
-                        <p class="text-white mb-0">Institutional-grade financial modeling, market analysis, operational reviews, and scenario
-                            testing—focused on
-                            clarity, risk, and value creation.</p>
+
+                    <!-- Box 2 -->
+                    <div class="rla-services-box-wrapper">
+                        <div class="rla-services-box h-auto">
+                            <div class="rla-services-box-icon">
+                                <i class="line-icon-Dollar-Sign icon-extra-large text-white"></i>
+                            </div>
+                            <div class="rla-services-box-content">
+                                <a href="#">Independent Diligence & Valuation</a>
+                                <p>
+                                    Institutional-grade financial modeling, market analysis, operational reviews, and
+                                    scenario
+                                    testing—focused on clarity, risk, and value creation.
+                                </p>
+                            </div>
+                        </div>
                     </div>
+
+                    <!-- Box 3 -->
+                    <div class="rla-services-box-wrapper">
+                        <div class="rla-services-box h-auto">
+                            <div class="rla-services-box-icon">
+                                <i class="line-icon-One-Window icon-extra-large text-white"></i>
+                            </div>
+                            <div class="rla-services-box-content">
+                                <a href="#">Private Company Investment Access</a>
+                                <p>
+                                    Exclusive and referred deal flow across growth-stage, late-stage, and sponsor-backed
+                                    companies seeking capital, operational advisory, or liquidity.
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="services-box border border-color-white p-5 xxl-p-6 box-shadow-extra-large h-100">
-                    <div class="services-box-icon">
-                        <i class="line-icon-One-Window icon-extra-large text-white mb-25px"></i>
+
+                    <div class="rla-services-box-wrapper">
                     </div>
-                    <div class="services-box-content">
-                        <h6 class="text-white">Private Company Investment Access</h6>
-                        <p class="text-white mb-0">Exclusive and referred deal flow across growth-stage, late-stage, and sponsor-backed
-                            companies seeking capital,
-                            operational advisory, or liquidity.</p>
-                    </div>
-                    </div>
+
                 </div>
             </div>
         </div>
-        <img src="images/redLine/finance-casestudy.jpg" alt="Red Lion Advisory"
-            class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover" style="z-index:0;">
-        <div class="bg-after-effect z-index-1"></div>
+
+        <div class="bg-lion-gray"></div>
+
+        <!-- Scroll indicator -->
+        <div class="rla-scroll-indicator" id="rlaScrollIndicator">
+            Scroll horizontally →
+        </div>
     </section>
+
     <!-- end section -->
+
+
     <!-- start section -->
-    <section class="p-0 bg-dark-gray">
+    <section class="p-0 wheat-bg">
         <div class="container-fluid p-0">
             <div class="row justify-content-center g-0">
                 <div class="col-lg-12 col-md-10 ps-10 pe-10 pt-7 pb-7 xxl-p-6"
@@ -343,10 +481,11 @@
                                 class="col text-center border-end border-bottom border-color-medium-gray xs-border-end-0 transition-inner-all p-2 sm-pt-12 sm-pb-12 custom-service-box">
                                 <div class="client-box">
                                     <a href="#">
-                                        <img src="images/redLine/svg/advisory.svg" class="h-40px md-h-30px sm-h-40px"
+                                        <img src="images/redLine/svg/balance.svg" class="h-40px md-h-30px sm-h-40px"
                                             alt="">
                                     </a>
-                                    <label class="mt-10">Family Office Advisory</label>
+                                    <label class="mt-10">Multi-Party Transaction
+                                        Waterfall Modeling</label>
                                 </div>
                             </div>
                             <!-- end client item -->
@@ -354,9 +493,81 @@
                             <div
                                 class="col text-center border-end border-bottom border-color-medium-gray sm-border-end-0 transition-inner-all p-2 sm-pt-12 sm-pb-12 custom-service-box">
                                 <div class="client-box">
-                                    <a href="#"><img src="images/redLine/svg/earning.svg"
+                                    <a href="#"><img src="images/redLine/svg/save-money.svg"
                                             class="h-40px md-h-30px sm-h-40px" alt=""></a>
-                                    <label class="mt-10">Investment Diligence & Valuation
+                                    <label class="mt-10">Liquidity Optimization & Cash Flow Precision</label>
+                                </div>
+                            </div>
+                            <!-- end client item -->
+                            <!-- start client item -->
+                            <div
+                                class="col text-center border-end border-bottom border-color-medium-gray xs-border-end-0 transition-inner-all p-2 sm-pt-12 sm-pb-12 custom-service-box">
+                                <div class="client-box">
+                                    <a href="#">
+                                        <!-- <img src="images/redLine/svg/target.svg"
+                                            class="h-40px md-h-30px sm-h-40px" alt=""> -->
+                                            
+                                            <img src="images/redLine/svg/strategic.svg"
+                                            class="h-40px md-h-30px sm-h-40px" alt="">
+                                        </a>
+                                    <label class="mt-10">Investor-Grade Financial Reporting & Governance</label>
+                                </div>
+                            </div>
+                            <!-- end client item -->
+                            <!-- start client item -->
+                            <div
+                                class="col text-center border-end border-bottom border-color-medium-gray xs-border-end-0 transition-inner-all p-2 sm-pt-12 sm-pb-12 custom-service-box">
+                                <div class="client-box">
+                                    <a href="#">
+                                        <!-- <img src="images/redLine/svg/gear.svg"
+                                            class="h-40px md-h-30px sm-h-40px" alt=""></a> -->
+                                            <img src="images/redLine/svg/target.svg"
+                                            class="h-40px md-h-30px sm-h-40px" alt=""></a>
+                                    <label class="mt-10">Multi-Entity Structure & Tax Optimization</label>
+                                </div>
+                            </div>
+                            <!-- end client item -->
+                            <!-- start client item -->
+                            <div
+                                class="col text-center border-bottom border-color-medium-gray xs-border-end-0 sm-border-bottom transition-inner-all p-2 sm-pt-12 sm-pb-12 custom-service-box">
+                                <div class="client-box">
+                                    <a href="#"><img src="images/redLine/svg/open-book.svg"
+                                            class="h-40px md-h-30px sm-h-40px" alt=""></a>
+                                    <label class="mt-10">Sell-Side M&A Advisory & Exit Execution </label>
+                                </div>
+                            </div>
+                            <!-- end client item -->
+                            <!-- start client item -->
+                            <div
+                                class="col text-center border-end border-bottom border-color-medium-gray xs-border-end-0 transition-inner-all p-2 sm-pt-12 sm-pb-12 custom-service-box">
+                                <div class="client-box">
+                                    <a href="#">
+                                        <img src="images/redLine/svg/bank.svg" class="h-40px md-h-30px sm-h-40px"
+                                            alt="">
+                                    </a>
+                                    <label class="mt-10">Complex Transaction Structuring </label>
+                                </div>
+                            </div>
+                            <!-- end client item -->
+                            <!-- start client item -->
+                            <div
+                                class="col text-center border-end border-bottom border-color-medium-gray sm-border-end-0 transition-inner-all p-2 sm-pt-12 sm-pb-12 custom-service-box">
+                                <div class="client-box">
+                                    <a href="#"><img src="images/redLine/svg/world.svg"
+                                            class="h-40px md-h-30px sm-h-40px" alt=""></a>
+                                    <label class="mt-10">Go-to-Market Strategy & Commercialization </label>
+                                </div>
+                            </div>
+                            <!-- end client item -->
+                            <!-- start client item -->
+                            <div
+                                class="col text-center border-end border-bottom border-color-medium-gray xs-border-end-0 transition-inner-all p-2 sm-pt-12 sm-pb-12 custom-service-box">
+                                <div class="client-box">
+                                    <a href="#"><img src="images/redLine/svg/handshakes.svg"
+                                            class="h-40px md-h-30px sm-h-40px" alt=""></a>
+                                    <label class="mt-10">Complex Cap Table
+                                        Modeling & Scenario
+                                        Analysis
                                     </label>
                                 </div>
                             </div>
@@ -365,20 +576,11 @@
                             <div
                                 class="col text-center border-end border-bottom border-color-medium-gray xs-border-end-0 transition-inner-all p-2 sm-pt-12 sm-pb-12 custom-service-box">
                                 <div class="client-box">
-                                    <a href="#"><img src="images/redLine/svg/target.svg"
+                                    <a href="#"><img src="images/redLine/svg/artificial-intelligence.svg"
                                             class="h-40px md-h-30px sm-h-40px" alt=""></a>
-                                    <label class="mt-10">Capital Strategy & Financing Solutions
-                                    </label>
-                                </div>
-                            </div>
-                            <!-- end client item -->
-                            <!-- start client item -->
-                            <div
-                                class="col text-center border-end border-bottom border-color-medium-gray xs-border-end-0 transition-inner-all p-2 sm-pt-12 sm-pb-12 custom-service-box">
-                                <div class="client-box">
-                                    <a href="#"><img src="images/redLine/svg/gear.svg"
-                                            class="h-40px md-h-30px sm-h-40px" alt=""></a>
-                                    <label class="mt-10">Operating & Investment Partner as a Service (OIPAAS ™ )
+                                    <label class="mt-10">Emerging Technology
+                                        Commercialization
+
                                     </label>
                                 </div>
                             </div>
@@ -389,18 +591,21 @@
                                 <div class="client-box">
                                     <a href="#"><img src="images/redLine/svg/loupe.svg"
                                             class="h-40px md-h-30px sm-h-40px" alt=""></a>
-                                    <label class="mt-10">M&A & Financial Modeling & Analysis
+                                    <label class="mt-10">Debt Structuring &
+                                        Lender Negotiations
                                     </label>
                                 </div>
                             </div>
                             <!-- end client item -->
+
                             <!-- start client item -->
                             <div
                                 class="col text-center border-end border-color-medium-gray sm-border-end-0 sm-border-bottom transition-inner-all p-2 sm-pt-12 sm-pb-12 custom-service-box">
                                 <div class="client-box">
                                     <a href="#"><img src="images/redLine/svg/briefcase.svg"
                                             class="h-40px md-h-30px sm-h-40px" alt=""></a>
-                                    <label class="mt-10">Treasury & Liquidity Management
+                                    <label class="mt-10">Strategic Roadmaps &
+                                        Milestone Planning
                                     </label>
                                 </div>
                             </div>
@@ -409,9 +614,10 @@
                             <div
                                 class="col text-center border-end border-color-medium-gray xs-border-end-0 xs-border-bottom transition-inner-all p-2 sm-pt-12 sm-pb-12 custom-service-box">
                                 <div class="client-box">
-                                    <a href="#"><img src="images/redLine/svg/strategic.svg"
+                                    <a href="#"><img src="images/redLine/svg/man.svg"
                                             class="h-40px md-h-30px sm-h-40px" alt=""></a>
-                                    <label class="mt-10">Strategic & Business Advisory (incl. CXO Leadership Services)
+                                    <label class="mt-10">Family Office & Investor
+                                        Advisory
                                     </label>
                                 </div>
                             </div>
@@ -422,7 +628,9 @@
                                 <div class="client-box">
                                     <a href="#"><img src="images/redLine/svg/process.svg"
                                             class="h-40px md-h-30px sm-h-40px" alt=""></a>
-                                    <label class="mt-10">Process Optimization & Technology Enablement
+                                    <label class="mt-10">Interim Executive
+                                        Leadership
+                                        (CFO/COO/CEO)
                                     </label>
                                 </div>
                             </div>
@@ -434,17 +642,19 @@
                                 <div class="client-box">
                                     <a href="#"><img src="images/redLine/svg/wallet.svg"
                                             class="h-40px md-h-30px sm-h-40px" alt=""></a>
-                                    <label class="mt-10">Risk & Compliance Advisory
+                                    <label class="mt-10">Buy-Side M&A &
+                                        Acquisition Strategy
                                     </label>
                                 </div>
                             </div>
                             <!-- end client item -->
                             <!-- start client item -->
-                            <div class="col text-center transition-inner-all p-2 sm-pt-12 sm-pb-0 custom-service-box">
+                            <div class="col text-center transition-inner-all p-2 sm-pt-12 sm-pb-12 custom-service-box">
                                 <div class="client-box">
                                     <a href="#"><img src="images/redLine/svg/money.svg"
                                             class="h-40px md-h-30px sm-h-40px" alt=""></a>
-                                    <label class="mt-10">Accounting & Financial Operations Advisory
+                                    <label class="mt-10">Advanced Financial
+                                        Modeling & Valuation
                                     </label>
                                 </div>
                             </div>
@@ -461,7 +671,8 @@
         <div class="container">
             <div class="row justify-content-center mb-5 xs-mb-20px">
                 <div class="col-md-12 col-sm-10 text-center">
-                    <h4 class="alt-font text-dark-gray fw-500 ls-minus-1px">Interested? <a href="mailto:info@redlionadv.com"
+                    <h4 class="alt-font text-dark-gray fw-500 ls-minus-1px">Interested? <a
+                            href="mailto:info@redlionadv.com"
                             class="text-base-color fw-500 text-decoration-line-bottom-medium">Send message</a></h4>
                 </div>
             </div>
@@ -483,9 +694,11 @@
                         <li><a href="contact.html">Contact us</a></li>
                     </ul>
                 </div>
-                                <div class="col-sm-12 md-mt-15px mt-35px text-center last-paragraph-no-margin social-platform">
-                    <a href="https://www.linkedin.com/company/redlionadvisory/" target="_blank"><img src="images/redLine/linkedin.svg" alt="LinkedIn"></a>
-                    <a href="https://x.com/AdvisoryLi92397" target="_blank"><img src="images/redLine/twitter.svg" alt="Twitter"></a>
+                <div class="col-sm-12 md-mt-15px mt-35px text-center last-paragraph-no-margin social-platform">
+                    <a href="https://www.linkedin.com/company/redlionadvisory/" target="_blank"><img
+                            src="images/redLine/linkedin.svg" alt="LinkedIn"></a>
+                    <a href="https://x.com/AdvisoryLi92397" target="_blank"><img src="images/redLine/twitter.svg"
+                            alt="Twitter"></a>
                 </div>
                 <!-- end footer column -->
             </div>
@@ -504,9 +717,132 @@
     </div>
     <!-- end scroll progress -->
     <!-- javascript libraries -->
+
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/vendors.min.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
-</body>
 
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.33/dist/lenis.min.js"></script>
+    <script>
+        const lenis = new Lenis({
+            duration: 1.2,
+            easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+            smoothWheel: true
+        })
+
+        function raf(time) {
+            lenis.raf(time)
+            requestAnimationFrame(raf)
+        }
+
+        requestAnimationFrame(raf)
+    </script>
+
+    <script type="text/javascript" src="js/main.js"></script>
+
+
+    <script>
+        // Fixed header on scroll
+        window.addEventListener('scroll', function () {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('sticky');
+            } else {
+                header.classList.remove('sticky');
+            }
+        });
+
+        // Horizontal scroll logic
+        const horizontalScrollWrapper = document.querySelector('.rla-horizontal-scroll-wrapper');
+        const horizontalContent = document.querySelector('.rla-horizontal-content');
+        const scrollIndicator = document.getElementById('rlaScrollIndicator');
+
+        let scrollDistance = 0; // dynamic, based on content width
+
+        if (horizontalScrollWrapper && horizontalContent) {
+            function updateScrollDistance() {
+                const viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+                const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
+
+                const contentWidth = horizontalContent.scrollWidth;
+                const extraScroll = Math.max(0, contentWidth - viewportWidth);
+
+                // Total height = viewport height (for initial pin) + extra vertical scroll
+                scrollDistance = viewportHeight + extraScroll;
+                horizontalScrollWrapper.style.height = scrollDistance + 'px';
+            }
+
+            function handleScroll() {
+                const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
+                const rect = horizontalScrollWrapper.getBoundingClientRect();
+
+                const totalScroll = scrollDistance - viewportHeight;
+                if (totalScroll <= 0) {
+                    horizontalContent.style.transform = 'translate3d(0,0,0)';
+                    if (scrollIndicator) scrollIndicator.classList.remove('rla-active');
+                    return;
+                }
+
+                const inSection = rect.top <= 0 && rect.bottom >= viewportHeight;
+
+                if (inSection) {
+                    if (scrollIndicator) scrollIndicator.classList.add('rla-active');
+
+                    const scrolled = Math.min(Math.max(-rect.top, 0), totalScroll);
+                    const progress = scrolled / totalScroll;
+
+                    const maxTranslate = horizontalContent.scrollWidth - window.innerWidth;
+                    const translateX = -progress * maxTranslate;
+
+                    horizontalContent.style.transform = `translate3d(${translateX}px,0,0)`;
+                } else {
+                    if (scrollIndicator) scrollIndicator.classList.remove('rla-active');
+
+                    // Before entering section: reset to start
+                    if (rect.top > 0) {
+                        horizontalContent.style.transform = 'translate3d(0,0,0)';
+                    } else {
+                        // After leaving: lock to end
+                        const maxTranslate = horizontalContent.scrollWidth - window.innerWidth;
+                        horizontalContent.style.transform = `translate3d(${-maxTranslate}px,0,0)`;
+                    }
+                }
+            }
+
+            // Throttle helper (same behavior as your original)
+            function throttle(func, delay) {
+                let timeoutId;
+                let lastExecTime = 0;
+
+                return function (...args) {
+                    const currentTime = Date.now();
+                    const timeSinceLastExec = currentTime - lastExecTime;
+
+                    clearTimeout(timeoutId);
+
+                    if (timeSinceLastExec > delay) {
+                        func.apply(this, args);
+                        lastExecTime = currentTime;
+                    } else {
+                        timeoutId = setTimeout(() => {
+                            func.apply(this, args);
+                            lastExecTime = Date.now();
+                        }, delay - timeSinceLastExec);
+                    }
+                };
+            }
+
+            const throttledScroll = throttle(handleScroll, 10);
+
+            window.addEventListener('scroll', throttledScroll);
+            window.addEventListener('resize', () => {
+                updateScrollDistance();
+                handleScroll();
+            });
+
+            // Initial setup
+            updateScrollDistance();
+            handleScroll();
+        }
+    </script>
+</body>
 </html>
