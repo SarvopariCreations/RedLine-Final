@@ -2,14 +2,54 @@
 <html class="no-js" lang="en">
 
 <head>
-    <title>Red Lion Advisory - F.A.S.T. (Finance, Analytics, Strategy and
-        Transformation) </title>
+    <title>Red Lion Advisory — F.A.S.T. | Finance • Analytics • Strategy • Transformation</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="author" content="ThemeZaa">
+    <meta name="author" content="Red Lion Advisory">
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <meta name="description" content="Red Lion Advisory - F.A.S.T. (Finance, Analytics, Strategy and
-      Transformation)">
+    <meta name="description"
+        content="Red Lion Advisory (F.A.S.T.) helps private companies, founders, and family offices navigate growth, capital events, and strategic inflection points with financial precision and executional depth.">
+    <meta name="robots" content="index, follow">
+    <!-- Canonical will be set to the current page URL by JS so it works in any environment -->
+    <link rel="canonical" href="">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:site_name" content="Red Lion Advisory">
+    <meta property="og:title" content="Red Lion Advisory — F.A.S.T. | Finance, Analytics, Strategy & Transformation">
+    <meta property="og:description"
+        content="We help private companies, founders, and family offices navigate growth, capital events, and strategic inflection points—with clarity, speed, and executional depth.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="images/redLine/RLA-Logo.png">
+    <meta property="og:locale" content="en_US">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Red Lion Advisory — F.A.S.T.">
+    <meta name="twitter:description"
+        content="Finance, Analytics, Strategy & Transformation for private companies and founders.">
+    <meta name="twitter:image" content="images/redLine/RLA-Logo.png">
+    <!-- JSON-LD structured data (Organization + Website) -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@graph": [
+                {
+                    "@type": "Organization",
+                    "name": "Red Lion Advisory",
+                    "url": "",
+                    "logo": "images/redLine/RLA-Logo.png",
+                    "sameAs": [
+                        "https://www.linkedin.com/company/redlionadvisory/",
+                        "https://x.com/AdvisoryLi92397"
+                    ]
+                },
+                {
+                    "@type": "WebSite",
+                    "name": "Red Lion Advisory",
+                    "url": ""
+                }
+            ]
+        }
+        </script>
     <!-- favicon icon -->
     <link rel="shortcut icon" href="images/redLine/rla-logo-touch-icon.png">
     <link rel="apple-touch-icon" href="images/redLine/rla-logo-touch-icon.png">
@@ -19,13 +59,45 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- style sheets and font icons -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap"
+        rel="stylesheet">
+
+
     <link rel="stylesheet" href="css/vendors.min.css" />
     <link rel="stylesheet" href="css/icon.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/responsive.css" />
     <link rel="stylesheet" href="css/myfont.css" />
-<link rel="stylesheet" href="css/finance.css" />
+    <link rel="stylesheet" href="css/finance.css" />
+    <link rel="stylesheet" href="css/work/styles.css" />
+    <script>
+        // Set canonical and Open Graph URL dynamically so this file can be served from any host
+        (function () {
+            try {
+                var canonical = document.querySelector('link[rel="canonical"]');
+                var ogUrl = document.querySelector('meta[property="og:url"]');
+                var orgJson = document.querySelector('script[type="application/ld+json"]');
+                var loc = window.location.href.split('?')[0].split('#')[0];
+                if (canonical) canonical.href = loc;
+                if (ogUrl) ogUrl.content = loc;
+                if (orgJson) {
+                    try {
+                        var data = JSON.parse(orgJson.textContent);
+                        if (Array.isArray(data['@graph'])) {
+                            data['@graph'].forEach(function (node) { if (node.url === "") node.url = loc; });
+                            orgJson.textContent = JSON.stringify(data);
+                        }
+                    } catch (e) { /* ignore JSON errors */ }
+                }
+            } catch (e) { }
+        })();
+    </script>
 </head>
+
 
 <body data-mobile-nav-style="full-screen-menu" data-mobile-nav-bg-color="#0d1a1d" class="custom-cursor">
     <!-- start cursor -->
@@ -35,99 +107,99 @@
     </div>
     <!-- end cursor -->
     <!-- start header -->
-<header>
-    <!-- start navigation -->
-    <nav class="navbar navbar-expand-lg bg-transparent disable-fixed">
-        <div class="container-fluid">
-            <div class="col-auto col-lg-2 me-lg-0 me-auto">
-                <a class="navbar-brand" href="/">
-                    <img src="images/redLine/LionRedLionLogoW.png" data-at2x="images/redLine/LionRedLionLogoW.png"
-                        alt="" class="default-logo">
-                    <img src="images/redLine/LionRedLionLogoW.png" data-at2x="images/redLine/LionRedLionLogoW.png"
-                        alt="" class="alt-logo">
-                    <img src="images/redLine/RLA-Logo.png" data-at2x="images/redLine/RLA-Logo.png" alt=""
-                        class="mobile-logo">
-                </a>
-            </div>
-            <div class="col-auto col-lg-8 menu-order position-static">
-                <button class="navbar-toggler float-start" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNav" aria-expanded="false" aria-controls="navbarNav"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-line"></span>
-                    <span class="navbar-toggler-line"></span>
-                    <span class="navbar-toggler-line"></span>
-                    <span class="navbar-toggler-line"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                    <ul class="navbar-nav alt-font">
-                        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-                        <li class="nav-item"><a href="about.html" class="nav-link">About us</a></li>
-                        <li class="nav-item"><a href="why-us.html" class="nav-link">Why us</a></li>
-                        <li class="nav-item dropdown simple-dropdown">
-                            <a href="services.html" class="nav-link">Services</a>
-                        </li>
-                        <li class="nav-item dropdown simple-dropdown">
-                            <a href="case-studies.html" class="nav-link">Case Studies</a>
-                        </li>
-                        <li class="nav-item d-flex d-sm-none"><a href="contact.html" class="nav-link">Contact</a>
-                        </li>
-                    </ul>
+    <header>
+        <!-- start navigation -->
+        <nav class="navbar navbar-expand-lg bg-transparent">
+            <div class="container-fluid">
+                <div class="col-auto col-lg-2 me-lg-0 me-auto">
+                    <a class="navbar-brand" href="/">
+                        <img src="images/redLine/LionRedLionLogoW.png" data-at2x="images/redLine/LionRedLionLogoW.png"
+                            alt="Red Lion Advisory logo" class="default-logo">
+                        <img src="images/redLine/LionRedLionLogoW.png" data-at2x="images/redLine/LionRedLionLogoW.png"
+                            alt="Red Lion Advisory logo" class="alt-logo">
+                        <img src="images/redLine/RLA-Logo.png" data-at2x="images/redLine/RLA-Logo.png"
+                            alt="Red Lion Advisory mark" class="mobile-logo">
+                    </a>
                 </div>
-            </div>
-            <div class="col-auto col-lg-2 text-end d-none d-sm-flex">
-                <div class="header-icon">
-                    <div class="header-button"><a href="contact.html"
-                            class="btn btn-very-small btn-white btn-box-shadow btn-round-edge left-icon text-transform-none"><i
-                                class="feather icon-feather-mail"></i>Contact</a></div>
+                <div class="col-auto col-lg-8 menu-order position-static align-items-center d-flex">
+                    <button class="navbar-toggler float-start" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav" aria-expanded="false" aria-controls="navbarNav"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-line"></span>
+                        <span class="navbar-toggler-line"></span>
+                        <span class="navbar-toggler-line"></span>
+                        <span class="navbar-toggler-line"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                        <ul class="navbar-nav alt-font">
+                            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                            <li class="nav-item"><a href="about.html" class="nav-link">About us</a></li>
+                            <li class="nav-item"><a href="why-us.html" class="nav-link">Why us</a></li>
+                            <li class="nav-item dropdown simple-dropdown">
+                                <a href="services.html" class="nav-link">Services</a>
+                            </li>
+                            <li class="nav-item dropdown simple-dropdown">
+                                <a href="case-studies.html" class="nav-link">Case Studies</a>
+                            </li>
+                            <li class="nav-item d-flex d-sm-none"><a href="contact.html" class="nav-link">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <!-- start contact form -->
-                <div id="contact-form"
-                    class="container p-0 contact-form-style-01 position-relative text-center mfp-hide">
-                    <div class="row g-0">
-                        <div class="col-lg-5 cover-background md-h-600px xs-h-400px"
-                            style="background-image:url('images/redLine/contact-us.jpg');"></div>
-                        <div class="col-lg-7">
-                            <div class="p-15 lg-p-10 bg-white">
-                                <span class="mb-10px">Looking for a finance agent?</span>
-                                <h3 class="d-inline-block alt-font fw-600 text-dark-gray mb-10 ls-minus-1px">How we
-                                    can help you?</h3>
-                                <form action="email-templates/contact-form.php" method="post">
-                                    <div class="position-relative form-group mb-20px">
-                                        <span class="form-icon"><i class="bi bi-emoji-smile"></i></span>
-                                        <input type="text" name="name" class="form-control required"
-                                            placeholder="Enter your name*" />
-                                    </div>
-                                    <div class="position-relative form-group mb-20px">
-                                        <span class="form-icon"><i class="bi bi-envelope"></i></span>
-                                        <input type="email" name="email" class="form-control required"
-                                            placeholder="Enter your email*" />
-                                    </div>
-                                    <div class="position-relative form-group mb-20px">
-                                        <span class="form-icon"><i class="bi bi-telephone-outbound"></i></span>
-                                        <input type="tel" name="phone" class="form-control"
-                                            placeholder="Enter your phone" />
-                                    </div>
-                                    <div class="position-relative form-group form-textarea">
-                                        <span class="form-icon"><i class="bi bi-chat-square-dots"></i></span>
-                                        <textarea placeholder="Your message" name="comment" class="form-control"
-                                            rows="3"></textarea>
-                                        <input type="hidden" name="redirect" value="">
-                                        <button
-                                            class="btn btn-medium btn-base-color btn-box-shadow btn-round-edge w-100 mt-20px submit"
-                                            type="submit">Send message</button>
-                                        <div class="form-results mt-20px d-none"></div>
-                                    </div>
-                                </form>
+                <div class="col-auto col-lg-2 text-end d-none d-sm-flex">
+                    <div class="header-icon">
+                        <div class="header-button"><a href="contact.html"
+                                class="btn btn-very-small btn-white btn-box-shadow btn-round-edge left-icon text-transform-none"><i
+                                    class="feather icon-feather-mail"></i>Contact</a></div>
+                    </div>
+                    <!-- start contact form -->
+                    <div id="contact-form"
+                        class="container p-0 contact-form-style-01 position-relative text-center mfp-hide">
+                        <div class="row g-0">
+                            <div class="col-lg-5 cover-background md-h-600px xs-h-400px"
+                                style="background-image:url('images/redLine/contact-us.jpg');"></div>
+                            <div class="col-lg-7">
+                                <div class="p-15 lg-p-10 bg-white">
+                                    <span class="mb-10px">Looking for a finance agent?</span>
+                                    <h3 class="d-inline-block alt-font fw-600 text-dark-gray mb-10 ls-minus-1px">How we
+                                        can help you?</h3>
+                                    <form action="email-templates/contact-form.php" method="post">
+                                        <div class="position-relative form-group mb-20px">
+                                            <span class="form-icon"><i class="bi bi-emoji-smile"></i></span>
+                                            <input type="text" name="name" class="form-control required"
+                                                placeholder="Enter your name*" />
+                                        </div>
+                                        <div class="position-relative form-group mb-20px">
+                                            <span class="form-icon"><i class="bi bi-envelope"></i></span>
+                                            <input type="email" name="email" class="form-control required"
+                                                placeholder="Enter your email*" />
+                                        </div>
+                                        <div class="position-relative form-group mb-20px">
+                                            <span class="form-icon"><i class="bi bi-telephone-outbound"></i></span>
+                                            <input type="tel" name="phone" class="form-control"
+                                                placeholder="Enter your phone" />
+                                        </div>
+                                        <div class="position-relative form-group form-textarea">
+                                            <span class="form-icon"><i class="bi bi-chat-square-dots"></i></span>
+                                            <textarea placeholder="Your message" name="comment" class="form-control"
+                                                rows="3"></textarea>
+                                            <input type="hidden" name="redirect" value="">
+                                            <button
+                                                class="btn btn-medium btn-base-color btn-box-shadow btn-round-edge w-100 mt-20px submit"
+                                                type="submit">Send message</button>
+                                            <div class="form-results mt-20px d-none"></div>
+                                        </div>
+                                    </form>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <!-- end contact form -->
                 </div>
-                <!-- end contact form -->
             </div>
-        </div>
-    </nav>
-    <!-- end navigation -->
-</header>
+        </nav>
+        <!-- end navigation -->
+    </header>
     <!-- end header -->
     <!-- start page title -->
     <section class="page-title-parallax-background half-section bg-dark-gray ipad-top-space-margin"

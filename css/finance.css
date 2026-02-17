@@ -281,40 +281,6 @@ footer{
     display:none !important;
 }
 
-@media(max-width:767px){
-    .throught-box p{
-        font-size: 20px;
-    }
-    .ft-md-32{
-        font-size:32px;
-    }
-    section {
-        padding-top: 25px;
-        padding-bottom: 25px;
-    }
-    .contact-wrapper{
-        width: 80% !important;
-    }
-     .contact-wrapper p{
-        font-size: 16px !important;
-        line-height: 24px !important;   
-     }
-     .swiper-wrapper span{
-        font-size: 28px !important;
-        line-height: 40px !important;
-     }
-     .h-60px{
-        height:auto !important;
-     }
-     .client-box{
-        display: flex;
-        flex-direction: column;
-     }
-     .custom-service-box{
-        border: 1px solid #828282 !important;
-     }
-}
-
 
 
 .list-style-02 li i {
@@ -697,7 +663,7 @@ footer{
         .service-card p {
             color:#e6f1f3;
             line-height: 1.5;
-            font-size: 1.2rem;
+            font-size: 1.25rem;
             letter-spacing: normal;
         }
 
@@ -718,7 +684,7 @@ footer{
             .services-section,
             .values-section,
             .cta-section {
-                padding: 4rem 1.5rem;
+                padding: 2rem 1.5rem;
             }
         }
 
@@ -1254,13 +1220,13 @@ footer{
                 padding: 1.5rem;
             }
 
-            .rla-services-box-content a {
+            /* .rla-services-box-content a {
                 font-size: 1.125rem;
-            }
+            } */
 
-            ul.rla-list-style-02 li {
-                font-size: 0.875rem;
-            }
+            /* ul.rla-list-style-02 li {
+                font-size: 1rem;
+            } */
 
             /* Disable horizontal scroll on mobile */
             .rla-horizontal-scroll-wrapper {
@@ -1289,7 +1255,7 @@ footer{
                 padding: 2rem 1rem;
             }
             .rla-horizontal-scroll-wrapper .rla-header-section .rla-mb-2{
-                margin-bottom: 1rem;
+                margin-bottom: 0rem;
             }
 
             .rla-horizontal-content {
@@ -1327,6 +1293,15 @@ footer{
             .header-label{
                 margin-bottom: 1rem;
             }
+            .text-black.w-100.md-w-100.fs-32.lh-5{
+                font-size:1.2rem
+            }
+            .text-red.w-100.fs-28.mb-0{
+                font-size:1.2rem
+            }
+            .bg-lion-gray{
+                background-attachment: scroll;
+            }
         }
 
         /* Scroll indicator */
@@ -1354,3 +1329,45 @@ footer{
             color:#000000;
         }
 
+@media(max-width:767px){
+    .throught-box p{
+        font-size: 20px;
+    }
+    .ft-md-32{
+        font-size:32px;
+    }
+    section {
+        padding-top: 0%;
+        padding-bottom: 0%;
+    }
+    .contact-wrapper{
+        width: 80% !important;
+    }
+     .contact-wrapper p{
+        font-size: 16px !important;
+        line-height: 24px !important;   
+     }
+     .swiper-wrapper span{
+        font-size: 28px !important;
+        line-height: 40px !important;
+     }
+     .h-60px{
+        height:auto !important;
+     }
+     .client-box{
+        display: flex;
+        flex-direction: column;
+     }
+     .custom-service-box{
+        border: 1px solid #828282 !important;
+     }
+     .about-grid{
+        gap:1rem;
+     }
+     .about-card{
+        padding:3rem 1.5rem;
+     }
+     .case-study-container section{
+        padding-top:3rem;
+     }
+}

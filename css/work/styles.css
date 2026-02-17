@@ -183,7 +183,7 @@ header {
 
 .text-left, .text-right {
     color: #333; /* Dark grey color */
-    font-size: 18px;
+    /* font-size: 18px; */
     font-weight: 400;
 }
 
@@ -691,5 +691,11 @@ header {
     .wheat-bg.sm-p-35px.mb-40px {
         padding: 0px 1rem !important;
         margin-bottom: 0px !important;
+    }
+    .work-card.task_block p{
+        font-size: 1.2rem;
+    }
+    .work-card.task_block h2{
+        line-height: 1.2;
     }
 }

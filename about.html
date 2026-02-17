@@ -484,7 +484,7 @@
     </section>
 
     <section class="wheat-bg">
-        <div class="services-content px-3">
+        <div class="services-content py-5 px-3">
             <div class="header-track-record">
                 <div class="header-label">Track Record</div>
                 <h1 class="header-title">Excellence in Execution</h1>
@@ -652,7 +652,45 @@
 
 <script type="text/javascript" src="js/main.js"></script>
 
-    <script>
+   <script>
+
+     (function() {
+                    // Playlist files (relative to the page). Edit these names to change the videos.
+                    var playlist = [
+                        'video/about-us-1.mp4',
+                        'video/about--2.mp4'
+                    ];
+
+                    var idx = 0;
+                    var video = document.getElementById('hero-video');
+                    var source = document.getElementById('hero-source');
+
+                    // Ensure muted autoplay works on most browsers
+                    video.muted = true;
+
+                    // When a video ends, advance to the next in playlist and play
+                    video.addEventListener('ended', function() {
+                        idx = (idx + 1) % playlist.length;
+                        // swap source and play
+                        source.src = playlist[idx];
+                        // load the new source and play
+                        video.load();
+                        // attempt to play; some browsers require a user gesture for unmuted autoplay only
+                        var playPromise = video.play();
+                        if (playPromise !== undefined) {
+                            playPromise.catch(function(err) {
+                                // Silent catch; autoplay may be blocked if not muted
+                                console.warn('Autoplay prevented:', err);
+                            });
+                        }
+                    });
+
+                    // Optional: if initial source differs from playlist[0], set it
+                    if (source.src.indexOf(playlist[0]) === -1) {
+                        source.src = playlist[0];
+                        video.load();
+                    }
+                })();
 // Fixed header on scroll
 window.addEventListener('scroll', function() {
     const header = document.querySelector('header');
